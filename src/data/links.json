@@ -1,0 +1,24 @@
+{
+  "social": {
+	"email": "fokinatatian@gmail.com",
+	"telegram": "https://t.me/fokina_tatiana",
+	"twitter": "https://twitter.com/ta_fokina",
+	"github": "https://github.com/TatianaFokina"
+  },
+  "public": {
+	"medium": "https://medium.com/@fokinatatiana",
+	"webStandards": "https://web-standards.ru/articles/",
+	"pitera11yPlaylist": "https://www.youtube.com/playlist?list=PLTdS5E3zupkGg0FoMoWB5FD2tlBrSWUQB",
+	"podcastFirst": "https://web-standards.ru/podcast/180/",
+	"podcastSecond": "https://web-standards.ru/podcast/193/",
+	"talk": "https://youtu.be/bEj3qur8vjU",
+	"jsunderhood": "https://twitter.com/jsunderhood/status/1206172119081607168",
+	"articleFirst": "https://web-standards.ru/articles/aria-live-regions/",
+	"articleSecond": "https://web-standards.ru/articles/a11y-and-law/",
+	"articleTranslate": "https://web-standards.ru/articles/tabbed-interfaces/"
+  },
+  "copyright": {
+	"eleventy": "https://www.11ty.dev",
+	"siteRepo": "/"
+  }
+}
