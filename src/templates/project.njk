@@ -2,14 +2,16 @@
 layout: page.njk
 ---
 
+<div class="container">
+	<div class="content">
+		<main class="main">
+			<h1>Страница проекта</h1>
+			<p>
+				{{ stack }}
+			</p>
 
+			{{ content | safe }}
 
-<main>
-	<h1>Страница проекта</h1>
-	<p>
-		{{ stack }}
-	</p>
-
-	{{ content | safe }}
-
-</main>
+		</main>
+	</div>
+</div>
