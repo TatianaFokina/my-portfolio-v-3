@@ -1,0 +1,30 @@
+{% set menu = [{
+	title: "Навыки",
+	anchorLink: "#skills"
+},{
+	title: "Проекты",
+	anchorLink: "#projects"
+},{
+	title: "Я в телевизоре",
+	anchorLink: "#mediaLife"
+},{
+	title: "Контакты",
+	anchorLink: "#contacts"
+}] %}
+
+<nav class="navigation">
+	<ul class="menu">
+		{% for item in menu %}
+			{% if item.url and item.url == page.url %}
+				{% set currentSection = true %}
+			{% else %}
+				{% set currentSection = false %}
+			{% endif %}
+			<li class="menu__item">
+				<a class="menu__item-link {% if currentSection %}menu__item-link--current{% endif %}" href="{{ item.anchorLink }}">
+					<span class="menu__item-link-text">{{ item.title }}</span>
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>
