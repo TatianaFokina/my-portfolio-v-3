@@ -1,0 +1,20 @@
+@import "../_variables.scss";
+
+// Skills lists
+
+.skills {
+    margin: 0;
+    padding: 0 0 0 $gap-5x;
+    
+    font-size: $font-size-sm;
+    
+    list-style: none;
+}
+
+.skills__item {
+    &:not(:last-of-type) {
+        padding-bottom: $gap-2x;
+    }
+    
+    list-style-image: url('/images/list-bullet.svg');
+}
