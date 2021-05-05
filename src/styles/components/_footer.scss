@@ -1,0 +1,13 @@
+@import "../_variables.scss";
+@import "../mixins.scss";
+
+.content__footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	padding: $gap-7x 0;
+	
+	color: $text-footer-color;
+}

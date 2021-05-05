@@ -1,0 +1,55 @@
+@import "../_variables.scss";
+@import "../mixins.scss";
+
+$container-margin-top: 216px;
+
+* {
+	box-sizing: border-box;
+	color: inherit;
+}
+
+::selection {
+	background: $selection-color;
+}
+
+/*a,
+button {
+	outline: 0;
+}*/
+
+html {
+	font-size: $font-size-root;
+}
+
+body {
+	//- Sticky footer
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	
+	margin: 0;
+	
+	font-family: $text-font-family;
+	font-size: $font-size-base;
+	color: $text-color;
+	line-height: $line-height;
+	
+	background-color: $bg-color;
+}
+
+.container {
+	//- Sticky footer
+	flex: 1 0 auto;
+	
+	margin-top: $container-margin-top;
+}
+
+.content {
+	width: 100%;
+	max-width: map-get($container-widths, xl);
+	
+	margin: 0 auto;
+	
+	padding-left: $gap-5x;
+	padding-right: $gap-5x;
+}

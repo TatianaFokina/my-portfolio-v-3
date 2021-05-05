@@ -1,0 +1,63 @@
+@import "../_variables.scss";
+@import "../mixins.scss";
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(362px, 1fr));
+	grid-gap: $gap-3x;
+}
+
+.card {
+	position: relative;
+	
+	padding: $gap-10x;
+	
+	background: $card-color;
+	
+	&:before {
+		content: "";
+		position: absolute;
+	}
+}
+
+.card__title {
+	margin: 0 0 $gap-2x 0;
+}
+
+.card__title-link {
+	font-weight: bold;
+	
+	border-bottom: 0;
+	
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.card__description {
+	margin: 0;
+	
+	font-size: $font-size-sm;
+}
+
+.card__tags {
+	margin-top: $gap-2x;
+}
+
+.card__tags-item {
+	padding: $gap-1x;
+	
+	font-weight: bold;
+	font-size: $font-size-xxs;
+	
+	background: $card-tag-color;
+	
+	&:not(:last-of-type) {
+		margin-right: $gap-2x;
+	}
+}
