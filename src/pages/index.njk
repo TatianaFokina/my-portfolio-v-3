@@ -1,87 +1,131 @@
 ---
-title: Портфолио Фокиной Татьяны
+title: Фокина Татьяна — портфолио
 layout: page.njk
 permalink: index.html
 ---
 
-<main class="main">
-	<h1 class="visually-hidden">Портфолио Фокиной Татьяны, HTML-верстальщицы</h1>
+<div class="container">
+	<div class="content">
+		<main class="main">
+			<h1 class="visually-hidden">Портфолио Фокиной Татьяны, HTML-верстальщицы</h1>
 
-	<h2>Кто я 🦦</h2>
-	<p>Привет! Меня зовут Таня. Я верстальщица из Санкт-Петербурга с потенциалом фронтенд-разработчицы.</p>
-	<p>Мне нравится веб. Люблю учиться, узнавать новое о веб-разработке и приобретать полезные навыки. Главная профессиональная цель — помогать создавать доступные, адаптивные и удобные интерфейсы, которые нравятся людям и которыми хочется пользоваться.</p>
-	<p>Пишу и перевожу статьи о доступности в вебе и выступаю с докладами. Также организую петербургский митап о веб-доступности pitera11y__meetup.</p>
-	<h3>Другие увлечения</h3>
-	<p>Я поклонница true crime, пью много чая и интересуюсь чайной культурой, различаю нюансы в отчаянии фильмов Ингмара Бергмана и Микеланджело Антониони, занимаюсь йогой, играю в компьютерные игры и помню времена песчаных бурь в Morrowind.</p>
+			<div class="about-section">
+				<div class="about-section__text">
+					<p class="key-paragraph">Привет! Меня зовут Таня. Я <span class="key-phrase">верстальщица с потенциалом фронтенд-разработчицы</span> из Санкт-Петербурга.</p>
+					<p>Мне нравится веб. Люблю учиться, узнавать новое о веб-разработке и приобретать полезные навыки. Главная профессиональная цель — помогать создавать доступные, адаптивные и удобные интерфейсы, которые нравятся людям и которыми хочется пользоваться.</p>
+					<p>Пишу и перевожу статьи о доступности в вебе и выступаю с докладами. Также организую петербургский митап о веб-доступности pitera11y__meetup.</p>
+				</div>
+				<div class="about-section__image">
+					<img src="{{ siteLink }}/images/stop.it.png" class="fluid-image" alt="Описание меня с фотографии.">
+				</div>
+			</div>
 
-	<h2>Навыки 🧠</h2>
-	<h3>Хард-скиллы</h3>
-	<ul>
-		<li>HTML5, Pug.</li>
-		<li>CSS3, Sass/SCSS/Stylus.</li>
-		<li>БЭМ.</li>
-		<li>Accessibility.</li>
-		<li>JavaScript, jQuery, Handlebars.</li>
-		<li>Gulp, Parcel.</li>
-		<li>Git.</li>
-		<li>Основы TypeScript.</li>
-		<li>Новичок в Angular, React и Next.js.</li>
-		<li>11ty.</li>
-	</ul>
-	<h3>Дополнительные навыки</h3>
-	<ul>
-		<li>Основы UX- и IU-дизайна и типографики.</li>
-		<li>Растровая и векторная графика.</li>
-		<li>Основы SEO.</li>
-		<li>Английский — B1, включая технический.</li>
-	</ul>
-	<h3>Инструменты</h3>
-	<ul>
-		<li>WebStorm, Sublime Text.</li>
-		<li>GitHub и GitLab.</li>
-		<li>Jira, Trello, Notion.</li>
-		<li>Storybook.</li>
-		<li>Figma, Zeplin, Avocode, Photoshop.</li>
-	</ul>
+			<div class="invisible-anchor" id="#skills"></div>
+			<h2>Навыки 🧠</h2>
+			<div class="skills-section">
+				<div>
+					<h3>Хард-скиллы</h3>
+					<ul class="skills">
+						<li class="skills__item">HTML5, Pug.</li>
+						<li class="skills__item">CSS3, Sass/SCSS/Stylus.</li>
+						<li class="skills__item">БЭМ.</li>
+						<li class="skills__item">Accessibility.</li>
+						<li class="skills__item">JavaScript, jQuery, Handlebars.</li>
+						<li class="skills__item">Gulp, Parcel.</li>
+						<li class="skills__item">Git.</li>
+						<li class="skills__item">Основы TypeScript.</li>
+						<li class="skills__item">Новичок в Angular, React и Next.js.</li>
+						<li class="skills__item">11ty.</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Дополнительно</h3>
+					<ul class="skills">
+						<li class="skills__item">Основы UX- и IU-дизайна и типографики.</li>
+						<li class="skills__item">Растровая и векторная графика.</li>
+						<li class="skills__item">Основы SEO.</li>
+						<li class="skills__item">Английский — B1, включая технический.</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Инструменты</h3>
+					<ul class="skills">
+						<li class="skills__item">WebStorm, Sublime Text.</li>
+						<li class="skills__item">GitHub и GitLab.</li>
+						<li class="skills__item">Jira, Trello, Notion.</li>
+						<li class="skills__item">Storybook.</li>
+						<li class="skills__item">Figma, Zeplin, Avocode, Photoshop.</li>
+					</ul>
+				</div>
+			</div>
 
-	<h2>Проекты 🧪</h2>
-	<ul>
-		{%- for project in collections.project -%}
-			<li>
-				<a href="{{ project.url }}">{{ project.data.title }}</a>
-				<span>{{ project.data.description }}</span>
-				<span>{{ project.data.stack }}</span>
-			</li>
-		{%- endfor -%}
-	</ul>
-	
-	<h2>Я в телевизоре 🎤</h2>
-	<p>Иногда оказываюсь в подкастах и выступаю с докладами угадайте о чём ;-) Один раз вела коллективный аккаунт разработчиков jsunderhood в Твиттере.</p>
-	<ul>
+			<div class="invisible-anchor" id="#projects"></div>
+			<h2>Проекты 🧪</h2>
+			<div class="cards">
+				{%- for project in collections.project -%}
+					<article class="card">
+						<h3 class="card__title">
+							<a class="card__title-link" href="{{ project.url }}">{{ project.data.title }}</a>
+						</h3>
+						<p class="card__description">{{ project.data.description }}</p>
+						<div class="card__tags">
+							{%- for tag in project.data.stack -%}
+								<span class="card__tags-item">{{ tag }}</span>
+							{%- endfor -%}
+						</div>
+					</article>
+				{%- endfor -%}
+			</div>
 
-		<li>Веб-стандарты, <a href="{{ links.public.podcastFirst }}" target="_blank" rel="noopener noreferrer">выпуск 180</a>.</li>
-		<li>Веб-стандарты, <a href="{{ links.public.podcastSecond }}" target="_blank" rel="noopener noreferrer">выпуск 193</a>.</li>
-		<li><a href="{{ links.public.talk }}" target="_blank" rel="noopener noreferrer">Доклад «Ты ничего не знаешь про alt»</a>, pitera11y_meetup 2 (30 января 2020).</li>
-		<li>Моя неделя в <a href="{{ links.public.jsunderhood }}" target="_blank" rel="noopener noreferrer">jsunderhood</a>.</li>
-	</ul>
-	<h3>Мои статьи и переводы</h3>
-	<p>Мне нравится делиться знаниями с другими и узнавать новое самой. Поэтому, когда я не пишу код, то перевожу и пишу про доступность и разметку.</p>
-	<ul>
-		<li><a href="{{ links.public.articleFirst }}" target="_blank" rel="noopener noreferrer">«Всё, что нужно знать про ARIA Live Regions».</a></li>
-		<li><a href="{{ links.public.articleSecond }}" target="_blank" rel="noopener noreferrer">«Доступность и закон»</a>.</li>
-		<li>Перевод <a href="{{ links.public.articleTranslate }}" target="_blank" rel="noopener noreferrer">«Инклюзивные компоненты: интерфейсы со вкладками»</a> Хейдона Пикеринга.</li>
-	</ul>
-	<p>Ещё больше моих текстов на <a href="{{ links.public.medium }}" target="_blank" rel="noopener noreferrer">Medium</a> и <a href="{{ links.public.webStandards }}" target="_blank" rel="noopener noreferrer">Веб-стандартах</a>.</p>
-	<h3>Pitera11y_meetup</h3>
-	<p>Или питерали митап, если вы сомневались, как это произносить. Это первый в России митап по веб-доступности. Его аудитория — разработчики, дизайнеры, тестировщики, технические писатели и все-все-все, кто причастен к созданию чего-то в вебе.</p>
-	<p>Я, как и другие ребята, ищу спикеров, помогаю в подготовке докладов, договариваюсь с площадками, пишу анонсы и готовлю графику. Одним словом делаю всё то, чем занимаются сферические организаторы в вакууме. Из необычного и того, что пока мало кто делает в маленьких IT-сообществах, — добавляю русские субтитры к записям докладов. <a href="{{ links.public.pitera11yPlaylist }}" target="_blank" rel="noopener noreferrer">Плейлист с докладами</a> можно посмотреть на канале pitercss_meetup.</p>
+			<div class="invisible-anchor" id="#mediaLife"></div>
+			<h2>Я в телевизоре 🎤</h2>
+			<p>Иногда оказываюсь в подкастах и выступаю с докладами угадайте о чём ;-) Один раз вела коллективный аккаунт разработчиков jsunderhood в Твиттере.</p>
+			<ul>
+				<li>Веб-стандарты,
+					<a href="{{ links.public.podcastFirst }}" target="_blank" rel="noopener noreferrer">выпуск 180</a>.
+				</li>
+				<li>Веб-стандарты,
+					<a href="{{ links.public.podcastSecond }}" target="_blank" rel="noopener noreferrer">выпуск 193</a>.
+				</li>
+				<li>
+					<a href="{{ links.public.talk }}" target="_blank" rel="noopener noreferrer">Доклад «Ты ничего не знаешь про alt»</a>, pitera11y_meetup 2 (30 января 2020).
+				</li>
+				<li>Моя неделя в
+					<a href="{{ links.public.jsunderhood }}" target="_blank" rel="noopener noreferrer">jsunderhood</a>.
+				</li>
+			</ul>
+			<h3>Статьи и переводы</h3>
+			<p>Мне нравится делиться знаниями с другими и узнавать новое самой. Поэтому, когда я не пишу код, то перевожу и пишу про доступность и разметку.</p>
+			<ul>
+				<li>
+					<a href="{{ links.public.articleFirst }}" target="_blank" rel="noopener noreferrer">«Всё, что нужно знать про ARIA Live Regions».</a>
+				</li>
+				<li>
+					<a href="{{ links.public.articleSecond }}" target="_blank" rel="noopener noreferrer">«Доступность и закон»</a>.
+				</li>
+				<li>Перевод
+					<a href="{{ links.public.articleTranslate }}" target="_blank" rel="noopener noreferrer">«Инклюзивные компоненты: интерфейсы со вкладками»</a> Хейдона Пикеринга.
+				</li>
+			</ul>
+			<p>Ещё больше моих текстов на
+				<a href="{{ links.public.medium }}" target="_blank" rel="noopener noreferrer">Medium</a> и
+				<a href="{{ links.public.webStandards }}" target="_blank" rel="noopener noreferrer">Веб-стандартах</a>.
+			</p>
+			<h3>Pitera11y_meetup</h3>
+			<p>Или питерали митап, если вы сомневались, как это произносить. Это первый в России митап по веб-доступности. Его аудитория — разработчики, дизайнеры, тестировщики, технические писатели и все-все-все, кто причастен к созданию чего-то в вебе.</p>
+			<p>Я, как и другие ребята, ищу спикеров, помогаю в подготовке докладов, договариваюсь с площадками, пишу анонсы и готовлю графику. Одним словом делаю всё то, чем занимаются сферические организаторы в вакууме. Из необычного и того, что пока мало кто делает в маленьких IT-сообществах, — добавляю русские субтитры к записям докладов.
+				<a href="{{ links.public.pitera11yPlaylist }}" target="_blank" rel="noopener noreferrer">Плейлист с докладами</a> можно посмотреть на канале pitercss_meetup.
+			</p>
 
-	<h2>Контакты 📬</h2>
-	<ul>
-		<li><a href="mailto:{{ links.social.email}}">fokinatatian@gmail.com</a></li>
-		<li><a href="{{ links.social.telegram}}" target="_blank" rel="noopener noreferrer">Telegram</a></li>
-		<li><a href="{{ links.social.twitter}}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-		<li><a href="{{ links.social.github}}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-	</ul>
+			<div class="invisible-anchor" id="#contacts"></div>
+			<h2>Контакты 📬</h2>
+			<ul>
+				<li><a href="mailto:{{ links.social.email }}">fokinatatian@gmail.com</a></li>
+				<li><a href="{{ links.social.telegram }}" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+				<li><a href="{{ links.social.twitter }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+				<li><a href="{{ links.social.github }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+			</ul>
 
-</main>
+		</main>
+	</div>
+</div>
