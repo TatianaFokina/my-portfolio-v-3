@@ -1,0 +1,12 @@
+@import "../_variables.scss";
+@import "../mixins.scss";
+
+.logo {
+	display: flex;
+}
+
+.logo__link {
+	display: inline-flex;
+	
+	border-bottom: 0;
+}

@@ -1,0 +1,33 @@
+@import "../_variables.scss";
+@import "../mixins.scss";
+
+.navigation {
+	margin-left: auto;
+}
+
+.menu {
+	display: flex;
+	
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.menu__item {
+	font-size: $font-size-sm;
+}
+
+.menu__item-link {
+	display: inline-flex;
+	position: relative;
+	
+	padding: 20px;
+	
+	line-height: 1.7;
+	border-bottom: 0;
+}
+
+.menu__item-link-text {
+	border-bottom: 3px solid;
+}

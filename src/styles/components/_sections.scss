@@ -1,0 +1,17 @@
+@import "../_variables.scss";
+@import "../mixins.scss";
+
+.about-section,
+.skills-section {
+	display: grid;
+}
+
+.about-section {
+	grid-template-columns: repeat(auto-fit,minmax(362px,1fr));
+	grid-gap: $gap-4x;
+}
+
+.skills-section {
+	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+	grid-gap: $gap-3x;
+}
