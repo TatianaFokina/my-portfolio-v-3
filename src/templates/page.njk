@@ -3,21 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{#<meta name="description" content="{{ preview or site.description }}">#}
-	<title>
-		{{ renderData.title or title }}{{ titleSuffix }}
-	</title>
-
-{#
-	{% include 'open-graph.njk' %}
-	{% include 'icons.njk' %}#}
-
-{#	<link rel="alternate" href="{{ site.paths.feed }}" type="application/rss+xml" title="Новости — Веб-стандарты">#}
-{#	<link rel="manifest" href="/manifest.json">#}
-{#	<link rel="stylesheet" href="/styles/styles.css">#}
-{#	<link rel="stylesheet" href="/styles/print.css" media="print">#}
+	<meta name="description" content="{{ description or site.description }}">
+	<title>{{ renderData.title or title }}{{ titleSuffix }}</title>
+{#  {% include 'open-graph.njk' %} #}
+{#  <link rel="manifest" href="/manifest.json"> #}
+	<link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
+	{% include 'header.njk' %}
+
 	{{ content | safe }}
 
 	{% include 'footer.njk' %}
