@@ -1,0 +1,23 @@
+@import "../_variables.scss";
+
+.visually-hidden {
+	position: absolute;
+	left: 0;
+	padding: 0;
+	list-style: none;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.fluid-image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.invisible-anchor {
+	position: relative;
+	top: -$gap-5x;
+}
