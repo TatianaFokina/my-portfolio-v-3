@@ -1,0 +1,85 @@
+// Colors
+$primary-color: #e20076;
+$secondary-color: #31a9f5;
+
+$gray-100: #eceff1;
+$gray-200: #dedede;
+$gray-300: #616161;
+$gray-400: #444340;
+$gray-500: #272624;
+$blue-gray: #37474f;
+$white: #ffffff;
+
+$bg-color: $gray-100;
+
+// Text
+$text-color: $gray-400;
+$text-footer-color: $gray-300;
+$highlight-color: transparentize($secondary-color, .6);
+$selection-color: transparentize($primary-color, .8);
+
+$h3-color: $gray-300;
+
+// Links
+$link-color: $blue-gray;
+$link-underline-color: $primary-color;
+// Interactive styles
+$link-hover-color: transparentize($link-color, .8);
+
+$focus-color: $secondary-color;
+
+// Cards
+$card-color: transparentize($secondary-color, .8);
+$card-tag-color: transparentize($secondary-color, .7);
+
+// Font: font-size, line-height
+$text-font-family: "Roboto", sans-serif;
+
+$font-size-root: 20px;
+$font-size-base: 1rem;
+$font-size-xxs: 0.7rem; // 14px
+$font-size-xs: 0.8rem; // 16px
+$font-size-sm: 0.9rem; // 18px
+$font-size-md: 1.2rem; // 24px
+$font-size-lg: 1.5rem; // 30px
+$font-size-xl: 1.8rem; // 36px
+$font-size-xxl: 2rem; // 40px
+
+$line-height: 1.6;
+$line-heading-height: 1.4;
+
+
+
+
+// Gaps
+$gap-1x: 4px;
+$gap-2x: $gap-1x * 2; // 8px
+$gap-3x: $gap-1x * 3; // 12px
+$gap-4x: $gap-1x * 4; // 16px
+$gap-5x: $gap-1x * 5; // 20px
+$gap-6x: $gap-1x * 6; // 24px
+$gap-7x: $gap-1x * 7; // 28px
+$gap-8x: $gap-1x * 8; // 32px
+$gap-9x: $gap-1x * 9; // 36px
+$gap-10x: $gap-1x * 10; // 40px
+
+
+
+
+// Grid breakpoints and container min-widths
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+$container-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1020px,
+	xxl: 1320px
+);
