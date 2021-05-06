@@ -123,10 +123,24 @@ permalink: index.html
 			<div class="invisible-anchor" id="#contacts"></div>
 			<h2>Контакты 📬</h2>
 			<ul class="contacts">
-				<li class="contacts__item"><a href="mailto:{{ links.social.email }}">fokinatatian@gmail.com</a></li>
-				<li><a href="{{ links.social.telegram }}" target="_blank" rel="noopener noreferrer">Telegram</a></li>
-				<li><a href="{{ links.social.twitter }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-				<li><a href="{{ links.social.github }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+				<li class="contacts__item">
+					<a class="contacts__item-link" href="{{ links.social.twitter }}" target="_blank" rel="noopener noreferrer">
+						<img src="images/ico-twitter.svg" alt="Твиттер">
+					</a>
+				</li>
+				<li class="contacts__item">
+					<a class="contacts__item-link" href="{{ links.social.github }}" target="_blank" rel="noopener noreferrer">
+						<img src="images/ico-github.svg" alt="Гитхаб">
+					</a>
+				</li>
+				<li class="contacts__item">
+					<a class="contacts__item-link" href="{{ links.social.telegram }}" target="_blank" rel="noopener noreferrer">
+						<img src="images/ico-telegram.svg" alt="Телеграм">
+					</a>
+				</li>
+				<li class="contacts__item">
+					<a href="mailto:{{ links.social.email }}">fokinatatian@gmail.com</a>
+				</li>
 			</ul>
 
 		</main>

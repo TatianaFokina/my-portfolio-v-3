@@ -1,0 +1,25 @@
+@import "../_variables.scss";
+@import "../mixins.scss";
+
+.contacts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.contacts__item:not(:last-of-type) {
+	margin-right: $gap-8x;
+}
+
+.contacts__item-link {
+	display: inline-flex;
+	
+	padding: $gap-3x;
+	
+	border-bottom: 0;
+}
