@@ -63,16 +63,19 @@ permalink: index.html
 			<h2>Проекты 🧪</h2>
 			<div class="cards">
 				{%- for project in collections.project -%}
-					<article class="card">
-						<h3 class="card__title">
-							<a class="card__title-link" href="{{ project.url }}">{{ project.data.title }}</a>
-						</h3>
-						<p class="card__description">{{ project.data.description }}</p>
-						<div class="card__tags">
-							{%- for tag in project.data.stack -%}
-								<span class="card__tags-item">{{ tag }}</span>
-							{%- endfor -%}
+					<article class="card card--{{ project.data.cardColor }}">
+						<div>
+							<h3 class="card__title">
+								<a class="card__title-link" href="{{ project.url }}">{{ project.data.title }}</a>
+							</h3>
+							<p class="card__description">{{ project.data.description }}</p>
+							<div class="card__tags">
+								{%- for tag in project.data.stack -%}
+									<span class="card__tags-item card__tags-item--{{ project.data.cardColor }}">{{ tag }}</span>
+								{%- endfor -%}
+							</div>
 						</div>
+						<img class="card__image" src="images/guide-preview.png" alt="">
 					</article>
 				{%- endfor -%}
 			</div>
@@ -119,8 +122,8 @@ permalink: index.html
 
 			<div class="invisible-anchor" id="#contacts"></div>
 			<h2>Контакты 📬</h2>
-			<ul>
-				<li><a href="mailto:{{ links.social.email }}">fokinatatian@gmail.com</a></li>
+			<ul class="contacts">
+				<li class="contacts__item"><a href="mailto:{{ links.social.email }}">fokinatatian@gmail.com</a></li>
 				<li><a href="{{ links.social.telegram }}" target="_blank" rel="noopener noreferrer">Telegram</a></li>
 				<li><a href="{{ links.social.twitter }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
 				<li><a href="{{ links.social.github }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>

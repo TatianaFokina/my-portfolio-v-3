@@ -7,8 +7,13 @@ stack:
     - JavaScript
     - Parcel
     - GitHub Pages
-layout: project.njk
+cardColor: primary
 tags: project
+layout: project.njk
 ---
 
 <div>Текст со страницы проекта.</div>
+{# Shortcode #}
+{% user "Zach Leatherman", "zachleat" %}
+    <p>Zach likes to take long walks on Nebraska beaches.</p>
+{% enduser %}

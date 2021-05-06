@@ -9,15 +9,24 @@
 
 .card {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	
 	padding: $gap-10x;
-	
-	background: $card-color;
 	
 	&:before {
 		content: "";
 		position: absolute;
 	}
+}
+
+.card--primary {
+	background: $card-primary-color;
+}
+
+.card--secondary {
+	background: $card-secondary-color;
 }
 
 .card__title {
@@ -55,9 +64,22 @@
 	font-weight: bold;
 	font-size: $font-size-xxs;
 	
-	background: $card-tag-color;
-	
 	&:not(:last-of-type) {
 		margin-right: $gap-2x;
 	}
+}
+
+.card__tags-item--primary {
+	background: $card-tag-primary-color;
+}
+
+.card__tags-item--secondary {
+	background: $card-tag-secondary-color;
+}
+
+.card__image {
+	display: block;
+	width: 100%;
+	
+	margin-top: $gap-5x;
 }

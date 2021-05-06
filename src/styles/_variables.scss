@@ -29,8 +29,10 @@ $link-hover-color: transparentize($link-color, .8);
 $focus-color: $secondary-color;
 
 // Cards
-$card-color: transparentize($secondary-color, .8);
-$card-tag-color: transparentize($secondary-color, .7);
+$card-primary-color: transparentize($primary-color, .8);
+$card-secondary-color: transparentize($secondary-color, .8);
+$card-tag-primary-color: transparentize($primary-color, .8);
+$card-tag-secondary-color: transparentize($secondary-color, .7);
 
 // Font: font-size, line-height
 $text-font-family: "Roboto", sans-serif;
