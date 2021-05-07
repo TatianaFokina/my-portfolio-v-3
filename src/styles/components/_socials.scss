@@ -1,7 +1,7 @@
 @import "../_variables.scss";
 @import "../mixins.scss";
 
-.contacts {
+.socials {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,11 +12,11 @@
 	list-style: none;
 }
 
-.contacts__item:not(:last-of-type) {
-	margin-right: $gap-8x;
+.socials__item:not(:last-of-type) {
+	margin-right: $gap-4x;
 }
 
-.contacts__item-link {
+.socials__item-link {
 	display: inline-flex;
 	
 	padding: $gap-3x;
