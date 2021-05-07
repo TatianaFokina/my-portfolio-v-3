@@ -75,7 +75,7 @@ permalink: index.html
 								{%- endfor -%}
 							</div>
 						</div>
-						<img class="card__image" src="images/guide-preview.png" alt="">
+						<img class="card__image" src="images/{{ project.data.cardPreview }}" alt="">
 					</article>
 				{%- endfor -%}
 			</div>
@@ -99,14 +99,14 @@ permalink: index.html
 			</ul>
 			<h3>Статьи и переводы</h3>
 			<p>Мне нравится делиться знаниями с другими и узнавать новое самой. Поэтому, когда я не пишу код, то перевожу и пишу про доступность и разметку.</p>
-			<ul>
-				<li>
+			<ul class="writes">
+				<li class="writes__item">
 					<a href="{{ links.public.articleFirst }}" target="_blank" rel="noopener noreferrer">«Всё, что нужно знать про ARIA Live Regions».</a>
 				</li>
-				<li>
+				<li class="writes__item">
 					<a href="{{ links.public.articleSecond }}" target="_blank" rel="noopener noreferrer">«Доступность и закон»</a>.
 				</li>
-				<li>Перевод
+				<li class="writes__item">Перевод
 					<a href="{{ links.public.articleTranslate }}" target="_blank" rel="noopener noreferrer">«Инклюзивные компоненты: интерфейсы со вкладками»</a> Хейдона Пикеринга.
 				</li>
 			</ul>

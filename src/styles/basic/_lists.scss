@@ -1,14 +1,17 @@
 @import "../_variables.scss";
 
-// Skills lists
-
-.skills {
+.skills,
+.writes {
     margin: 0;
     padding: 0 0 0 $gap-5x;
     
-    font-size: $font-size-sm;
-    
     list-style: none;
+}
+
+// Skills list
+
+.skills {
+    font-size: $font-size-sm;
 }
 
 .skills__item {
@@ -16,5 +19,15 @@
         padding-bottom: $gap-2x;
     }
     
-    list-style-image: url('/images/list-bullet.svg');
+    list-style-image: url('/images/list-bullet-nut.svg');
+}
+
+// Writes list
+
+.writes__item {
+    &:not(:last-of-type) {
+        padding-bottom: $gap-2x;
+    }
+    
+    list-style-image: url('/images/list-bullet-pen.svg');
 }
