@@ -1,0 +1,18 @@
+<div class="cards">
+	{%- for project in collections.project -%}
+		<article class="card card--{{ project.data.cardColor }}">
+			<div>
+				<h3 class="card__title">
+					<a class="card__title-link" href="{{ project.url }}">{{ project.data.title }}</a>
+				</h3>
+				<p class="card__description">{{ project.data.description }}</p>
+				<div class="card__tags">
+					{%- for tag in project.data.stack -%}
+						<span class="card__tags-item card__tags-item--{{ project.data.cardColor }}">{{ tag }}</span>
+					{%- endfor -%}
+				</div>
+			</div>
+			<img class="card__image" src="images/{{ project.data.cardPreview }}" alt="">
+		</article>
+	{%- endfor -%}
+</div>
