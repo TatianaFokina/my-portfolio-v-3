@@ -3,7 +3,7 @@ $primary-color: #e20076;
 $secondary-color: #31a9f5;
 
 $gray-100: #eceff1;
-$gray-200: #dedede;
+$gray-200: #f9fafb;
 $gray-300: #616161;
 $gray-400: #444340;
 $gray-500: #272624;
@@ -15,13 +15,13 @@ $bg-color: $gray-100;
 // Text
 $text-color: $gray-400;
 $text-footer-color: $gray-300;
-$highlight-color: transparentize($secondary-color, .6);
+$highlight-color: transparentize($secondary-color, .8);
 $selection-color: transparentize($primary-color, .8);
 
 $h3-color: $gray-300;
 
 // Links
-$link-color: $blue-gray;
+$link-color: $gray-400;
 $link-underline-color: $primary-color;
 // Interactive styles
 $link-hover-color: transparentize($link-color, .8);
@@ -33,6 +33,10 @@ $card-primary-color: transparentize($primary-color, .8);
 $card-secondary-color: transparentize($secondary-color, .8);
 $card-tag-primary-color: transparentize($primary-color, .8);
 $card-tag-secondary-color: transparentize($secondary-color, .7);
+
+// Activity
+$activity-block-color: $gray-200;
+$activity-text-color: $gray-300;
 
 // Font: font-size, line-height
 $text-font-family: "Roboto", sans-serif;
@@ -48,7 +52,7 @@ $font-size-xl: 1.8rem; // 36px
 $font-size-xxl: 2rem; // 40px
 
 $line-height: 1.6;
-$line-heading-height: 1.4;
+$line-heading-height: 1.1;
 
 
 
