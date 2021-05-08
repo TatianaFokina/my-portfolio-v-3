@@ -1,0 +1,38 @@
+@import "../_variables.scss";
+@import "../mixins.scss";
+
+.activity {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: $gap-2x;
+	
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.activity__item {
+	display: flex;
+	align-items: start;
+	
+	padding: $gap-4x;
+	
+	background: $activity-block-color;
+}
+
+.activity__item-image,
+.activity__item-desc {
+	display: block;
+}
+
+.activity__item-image {
+	margin-right: $gap-4x;
+}
+
+.activity__item-desc {
+	margin-top: $gap-4x;
+	
+	font-size: $font-size-sm;
+	color: $activity-text-color;
+}
