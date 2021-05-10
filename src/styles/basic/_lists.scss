@@ -2,7 +2,6 @@
 
 .skills,
 .writes {
-    margin: 0;
     padding: 0 0 0 $gap-5x;
     
     list-style: none;
@@ -11,6 +10,8 @@
 // Skills list
 
 .skills {
+    margin: 0;
+    
     font-size: $font-size-sm;
 }
 
