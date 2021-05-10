@@ -1,36 +1,54 @@
+{% set hardSkills = [
+	"HTML5, Pug",
+	"CSS3, Sass/SCSS/Stylus",
+	"БЭМ",
+	"Accessibility",
+	"JavaScript, jQuery, Handlebars",
+	"Gulp, Parcel",
+	"Git",
+	"Основы TypeScript",
+	"Новичок в Angular и React",
+	"11ty, Next.js"
+] %}
+
+{% set extraSkills = [
+	"Основы UX- и IU-дизайна и типографики",
+	"Растровая и векторная графика",
+	"Основы SEO",
+	"Английский — B1, включая технический"
+] %}
+
+{% set instruments = [
+	"WebStorm, Sublime Text",
+	"GitHub и GitLab",
+	"Jira, Trello, Notion",
+	"Storybook",
+	"Figma, Zeplin, Avocode, Photoshop"
+] %}
+
 <div class="skills-section">
 	<div>
 		<h3>Хард-скиллы</h3>
 		<ul class="skills">
-			<li class="skills__item">HTML5, Pug.</li>
-			<li class="skills__item">CSS3, Sass/SCSS/Stylus.</li>
-			<li class="skills__item">БЭМ.</li>
-			<li class="skills__item">Accessibility.</li>
-			<li class="skills__item">JavaScript, jQuery, Handlebars.</li>
-			<li class="skills__item">Gulp, Parcel.</li>
-			<li class="skills__item">Git.</li>
-			<li class="skills__item">Основы TypeScript.</li>
-			<li class="skills__item">Новичок в Angular, React и Next.js.</li>
-			<li class="skills__item">11ty.</li>
+			{% for item in hardSkills %}
+				<li class="skills__item">{{ item }}.</li>
+			{% endfor %}
 		</ul>
 	</div>
 	<div>
 		<h3>Дополнительно</h3>
 		<ul class="skills">
-			<li class="skills__item">Основы UX- и IU-дизайна и типографики.</li>
-			<li class="skills__item">Растровая и векторная графика.</li>
-			<li class="skills__item">Основы SEO.</li>
-			<li class="skills__item">Английский — B1, включая технический.</li>
+			{% for item in extraSkills %}
+				<li class="skills__item">{{ item }}.</li>
+			{% endfor %}
 		</ul>
 	</div>
 	<div>
 		<h3>Инструменты</h3>
 		<ul class="skills">
-			<li class="skills__item">WebStorm, Sublime Text.</li>
-			<li class="skills__item">GitHub и GitLab.</li>
-			<li class="skills__item">Jira, Trello, Notion.</li>
-			<li class="skills__item">Storybook.</li>
-			<li class="skills__item">Figma, Zeplin, Avocode, Photoshop.</li>
+			{% for item in instruments %}
+				<li class="skills__item">{{ item }}.</li>
+			{% endfor %}
 		</ul>
 	</div>
 </div>
