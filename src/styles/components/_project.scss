@@ -1,0 +1,21 @@
+@import "../_variables.scss";
+@import "../mixins.scss";
+
+.project {
+	display: flex;
+	justify-content: space-between;
+	
+	margin-bottom: $gap-8x;
+}
+
+.project__heading {
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+	
+	font-size: $font-size-xs;
+	text-transform: uppercase;
+}
+
+.project__stack {
+	margin: 0;
+}
