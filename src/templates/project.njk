@@ -5,12 +5,36 @@ layout: page.njk
 <div class="container">
 	<div class="content">
 		<main class="main">
-			<h1>Страница проекта</h1>
-			<p>
-				{{ stack }}
-			</p>
+			<h1>{{ title }}</h1>
+			<div class="project">
+				<div>
+					<h2 class="project__heading">🔧 Стек</h2>
+					<ul class="project__stack">
+						{%- for tag in stack -%}
+							<li class="project-info__stack-item">{{ tag }}</li>
+						{%- endfor -%}
+					</ul>
+				</div>
 
-			{{ content | safe }}
+				<div>
+					<h2 class="project__heading">📅 Год</h2>
+					<time class="project__year">{{ year }}</time>
+				</div>
+
+				<div>
+					<h2 class="project__heading">🎮 Демо</h2>
+					<a class="project__demo" href="{{ demoLink }}" target="_blank" rel="noopener noreferrer">Посмотреть сайт</a>
+				</div>
+
+				<div>
+					<h2 class="project__heading">📁 Репозиторий</h2>
+					<a class="project__repo" href="{{ repoLink }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+				</div>
+			</div>
+
+			<div class="project-desc">
+				{{ content | safe }}
+			</div>
 
 		</main>
 	</div>
