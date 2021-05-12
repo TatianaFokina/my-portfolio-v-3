@@ -7,7 +7,7 @@
 }
 
 .two-column-section {
-	grid-template-columns: repeat(auto-fit,minmax(362px,1fr));
+	grid-template-columns: repeat(auto-fit,minmax(362px, 1fr));
 	grid-gap: $gap-6x;
 }
 
