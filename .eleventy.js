@@ -16,17 +16,18 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Shortcode
-	eleventyConfig.addPairedShortcode("project", function(titleFirst, titleSecond) {
+	eleventyConfig.addPairedShortcode("projectColumn", function(content) {
+		return `
+			<div class="project-desc__column">
+				${content}
+			</div>
+			`;
+	});
+	eleventyConfig.addPairedShortcode("projectDesc", function(content, title) {
 		return `
 			<div>
-				<div>
-					<div>
-						<h2 class="project-desc__heading">${titleFirst}</h2>
-					</div>
-					<div>
-						<h2 class="project-desc__heading">${titleSecond}</h2>
-					</div>
-				</div>
+				<h2 class="project-desc__heading">${title}</h2>
+				${content}
 			</div>
 			`;
 	});
