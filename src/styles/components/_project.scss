@@ -19,3 +19,9 @@
 .project__stack {
 	margin: 0;
 }
+
+.project-desc__column {
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(362px, 1fr));
+	grid-gap: $gap-3x;
+}
