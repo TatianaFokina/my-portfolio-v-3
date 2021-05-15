@@ -19,5 +19,35 @@
 
 .invisible-anchor {
 	position: relative;
-	top: -$gap-5x;
+	top: -$gap-11x;
+}
+
+// Skip link
+.skip-link {
+	position: absolute;
+	display: inline-block;
+	top: auto;
+	left: -999px;
+	
+	width: 1px;
+	height: 1px;
+	
+	font-size: $font-size-xs;
+	font-weight: bold;
+	color: $text-color;
+	
+	border-bottom: 0;
+	
+	z-index: $z-index-2;
+	
+	&:focus {
+		top: 0;
+		left: 50%;
+		
+		width: auto;
+		height: auto;
+		margin: 0 auto;
+		
+		transform: translateX(-50%);
+	}
 }
