@@ -6,7 +6,7 @@ permalink: index.html
 
 <div class="container">
 	<div class="content">
-		<main class="main">
+		<main class="main" id="main-content">
 			<h1 class="visually-hidden">Обо мне, моих навыках, проектах и активностях</h1>
 
 			<div class="two-column-section">
@@ -20,15 +20,15 @@ permalink: index.html
 				</div>
 			</div>
 
-			<div class="invisible-anchor" id="#skills"></div>
+			<div class="invisible-anchor" id="skills"></div>
 			<h2>Навыки 🧠</h2>
 			{% include 'skills-list.njk' %}
 
-			<div class="invisible-anchor" id="#projects"></div>
+			<div class="invisible-anchor" id="projects"></div>
 			<h2>Проекты 🧪</h2>
 			{% include 'project-cards.njk' %}
 
-			<div class="invisible-anchor" id="#mediaLife"></div>
+			<div class="invisible-anchor" id="mediaLife"></div>
 			<h2>Я в телевизоре 🎤</h2>
 			<p>Иногда оказываюсь в подкастах и выступаю с докладами угадайте о чём ;-) Один раз вела коллективный аккаунт разработчиков jsunderhood в Твиттере.</p>
 			{% include 'activity.njk' %}
@@ -62,7 +62,7 @@ permalink: index.html
 				</div>
 			</div>
 
-			<div class="invisible-anchor" id="#contacts"></div>
+			<div class="invisible-anchor" id="contacts"></div>
 			<h2>Контакты 📬</h2>
 			<p>Сейчас я нахожусь в поисках новой работы. Если хотите увидеть моё резюме, предложить вакансию верстальщика/фронтенд-разработчика или просто сказать привет, можете написать на почту <a href="mailto:{{ links.social.email }}">fokinatatian@gmail.com</a>. Если удобнее написать в Telegram, то ищите там <a href="{{ links.social.telegram }}" target="_blank" rel="noopener noreferrer">@fokina_tatiana</a>.</p>
 		</main>
