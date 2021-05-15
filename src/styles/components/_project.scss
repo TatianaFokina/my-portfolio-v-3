@@ -25,3 +25,7 @@
 	grid-template-columns: repeat(auto-fit,minmax(362px, 1fr));
 	grid-gap: $gap-3x;
 }
+
+.project__image {
+	margin-top: $gap-6x;
+}
