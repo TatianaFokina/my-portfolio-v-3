@@ -12,7 +12,7 @@
 .skills {
     margin: 0;
     
-    font-size: $font-size-sm;
+    font-size: var(--step--1);
 }
 
 .skills__item {
