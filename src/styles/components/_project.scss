@@ -1,18 +1,27 @@
 @import "../_variables.scss";
-@import "../mixins.scss";
+@import "../mixins-and-functions";
+
+$project-heading-margin-top: 2rem;
+$project-heading-margin-bottom: 0.5rem;
 
 .project {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	
 	margin-bottom: $gap-8x;
+	
+	@include media(md) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 .project__heading {
-	margin-top: 2rem;
-	margin-bottom: 0.5rem;
+	margin-top: $project-heading-margin-top;
+	margin-bottom: $project-heading-margin-bottom;
 	
-	font-size: $font-size-xs;
+	font-size: var(--step--1);
 	text-transform: uppercase;
 }
 
@@ -22,8 +31,12 @@
 
 .project-desc__column {
 	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(362px, 1fr));
-	grid-gap: $gap-3x;
+	grid-gap: $gap-5x;
+	
+	@include media(md) {
+		grid-template-columns: repeat(2, 1fr)
+	}
+	
 }
 
 .project__image {
