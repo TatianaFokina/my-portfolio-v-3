@@ -1,20 +1,33 @@
 @import "../_variables.scss";
-@import "../mixins.scss";
+@import "../mixins-and-functions";
 
 .header {
-	position: fixed;
+	position: relative;
 	width: 100%;
 	
 	background: $bg-color;
 	
 	z-index: $z-index-1;
+	
+	@include media(sm) {
+		position: fixed;
+	}
 }
 
 .content__header {
 	display: flex;
-	align-items: center;
+	align-items: start;
+	flex-direction: column;
 	
 	padding: $gap-5x 0;
 	
 	border-bottom: 1px solid $gray-200;
+	
+	@include media(sm) {
+		align-items: center;
+	}
+	
+	@include media(md) {
+		flex-direction: row;
+	}
 }
