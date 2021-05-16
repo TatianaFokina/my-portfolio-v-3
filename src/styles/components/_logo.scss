@@ -1,8 +1,21 @@
 @import "../_variables.scss";
-@import "../mixins.scss";
+@import "../mixins-and-functions";
+
+$logo-width-big: 220px;
+$logo-width-small: 200px;
 
 .logo {
 	display: flex;
+}
+
+.logo__image {
+	width: $logo-width-small;
+	height: auto;
+	
+	@include media(lg) {
+		width: $logo-width-big;
+		height: auto;
+	}
 }
 
 .logo__link {
