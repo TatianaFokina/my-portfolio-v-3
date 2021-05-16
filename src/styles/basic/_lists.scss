@@ -11,13 +11,11 @@
 
 .skills {
     margin: 0;
-    
-    font-size: var(--step--1);
 }
 
 .skills__item {
     &:not(:last-of-type) {
-        padding-bottom: $gap-2x;
+        padding-bottom: $gap-1x;
     }
     
     list-style-image: url('/images/list-bullet-nut.svg');
