@@ -1,5 +1,5 @@
 @import "../_variables.scss";
-@import "../mixins.scss";
+@import "../mixins-and-functions";
 
 .two-column-section,
 .skills-section {
@@ -7,14 +7,20 @@
 }
 
 .two-column-section {
-	grid-template-columns: repeat(auto-fit,minmax(362px, 1fr));
 	grid-gap: $gap-6x;
+	
+	@include media(md) {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 .skills-section {
-	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-	grid-gap: $gap-3x;
+	grid-gap: $gap-4x;
 	
-	// Compensate heading margin-top
+	//- Compensate heading margin-top
 	margin-top: -1rem;
+	
+	@include media(md) {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
