@@ -19,10 +19,11 @@ $z-index-2: 2;
 // Text
 $text-color: $gray-400;
 $text-footer-color: $gray-300;
+$h3-color: $gray-300;
+
 $highlight-color: transparentize($secondary-color, .8);
 $selection-color: transparentize($primary-color, .8);
 
-$h3-color: $gray-300;
 
 // Links
 $link-color: $gray-400;
@@ -45,18 +46,13 @@ $activity-text-color: $gray-300;
 // Font: font-size, line-height
 $text-font-family: "Roboto", sans-serif;
 
-$font-size-root: 20px;
-$font-size-base: 1rem;
-$font-size-xxs: 0.7rem; // 14px
-$font-size-xs: 0.8rem; // 16px
-$font-size-sm: 0.9rem; // 18px
-$font-size-md: 1.2rem; // 24px
-$font-size-lg: 1.5rem; // 30px
-$font-size-xl: 1.8rem; // 36px
-$font-size-xxl: 2rem; // 40px
+$font-size-base: 20px;
 
-$line-height: 1.6;
-$line-heading-height: 1.1;
+$line-height-base: 1.6; // 32px
+$line-height-h1: 1.318; // 58px
+$line-height-h2: 1.263; // 48px
+$line-height-h3: 1.285; // 36px
+$line-height-h4: 1.5; // 24px
 
 
 
