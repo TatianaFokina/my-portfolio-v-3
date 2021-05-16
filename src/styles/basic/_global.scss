@@ -32,7 +32,7 @@
 	width: 1px;
 	height: 1px;
 	
-	font-size: $font-size-xs;
+	font-size: var(--step--1);
 	font-weight: bold;
 	color: $text-color;
 	
