@@ -1,6 +1,8 @@
 @import "../_variables.scss";
 @import "../mixins-and-functions";
 
+$skills-margin-top: 16px;
+
 .two-column-section,
 .skills-section {
 	display: grid;
@@ -18,7 +20,7 @@
 	grid-gap: $gap-4x;
 	
 	//- Compensate heading margin-top
-	margin-top: -1rem;
+	margin-top: -$skills-margin-top;
 	
 	@include media(md) {
 		grid-template-columns: repeat(3, 1fr);
