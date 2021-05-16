@@ -1,9 +1,10 @@
 // Variables and mixins
 @import "_variables";
-@import "_mixins";
+@import "mixins-and-functions";
 
 // Core styles
 @import "basic/fonts";
+@import "basic/typography";
 @import "basic/global";
 @import "basic/layout";
 @import "basic/text";
