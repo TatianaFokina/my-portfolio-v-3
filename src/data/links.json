@@ -19,6 +19,7 @@
   },
   "copyright": {
 	"eleventy": "https://www.11ty.dev",
-	"siteRepo": "https://github.com/TatianaFokina/my-portfolio-v-2"
+	"siteRepo": "https://github.com/TatianaFokina/my-portfolio-v-2",
+	"iconfinder": "https://www.iconfinder.com"
   }
 }

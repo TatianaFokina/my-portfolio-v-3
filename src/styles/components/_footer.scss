@@ -1,5 +1,5 @@
 @import "../_variables.scss";
-@import "../mixins.scss";
+@import "../mixins-and-functions";
 
 .content__footer {
 	display: flex;
@@ -15,4 +15,18 @@
 
 .socials-container {
 	margin-bottom: $gap-3x;
+}
+
+.copyrights {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.copyrights__item {
+	display: block;
+	
+	&:not(:last-of-type) {
+		margin-bottom: $gap-2x;
+	}
 }
