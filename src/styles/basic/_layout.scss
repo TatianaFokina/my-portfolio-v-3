@@ -1,22 +1,13 @@
 @import "../_variables.scss";
 @import "../mixins-and-functions";
 
-$container-margin-top: 210px;
+$container-margin-top: 180px;
 $container-margin-top-mobile: 80px;
 
 * {
 	box-sizing: border-box;
 	color: inherit;
 }
-
-::selection {
-	background: $selection-color;
-}
-
-/*a,
-button {
-	outline: 0;
-}*/
 
 html {
 	font-size: $font-size-base;
@@ -36,6 +27,10 @@ body {
 	color: $text-color;
 	
 	background-color: $bg-color;
+}
+
+::selection {
+	background: $selection-color;
 }
 
 small {
