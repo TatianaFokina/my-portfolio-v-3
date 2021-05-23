@@ -18,14 +18,25 @@
 	
 	padding: $gap-4x;
 	
+	transition: transform 0.2s;
+	
 	&:before {
 		content: "";
 		position: absolute;
 	}
 	
+	&:hover {
+		transform: translateY(-3px);
+	}
+	
 	@include media(md) {
 		padding: $gap-10x;
 	}
+}
+
+.keyboard-focus .card:focus-within {
+	outline: 2px solid $link-focus-color;
+	outline-offset: 2px;
 }
 
 .card--primary {
@@ -53,6 +64,14 @@
 		right: 0;
 		bottom: 0;
 	}
+	
+	&:hover {
+		color: inherit;
+	}
+}
+
+.keyboard-focus .card__title-link:focus {
+	outline: 0;
 }
 
 .card__description {

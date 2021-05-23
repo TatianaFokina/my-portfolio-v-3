@@ -5,4 +5,49 @@ a {
     color: $link-color;
     
     border-bottom: 3px solid $link-underline-color;
+    
+    transition: color 0.2s ease-in-out;
+    
+    &:hover {
+        color: $link-color--hover;
+    }
+    
+    &:focus {
+        outline: 0;
+    }
+}
+
+.keyboard-focus a:focus {
+    outline: 2px solid $link-focus-color;
+    outline-offset: 2px;
+}
+
+// Skip link
+.skip-link {
+    position: absolute;
+    display: inline-block;
+    top: auto;
+    left: -999px;
+    
+    width: 1px;
+    height: 1px;
+    
+    font-size: var(--step--1);
+    font-weight: bold;
+    color: $text-color;
+    
+    border-bottom: 0;
+    
+    z-index: $z-index-2;
+    
+    &:focus {
+        top: 0;
+        left: 50%;
+        
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        
+        transform: translateX(-50%);
+    }
 }

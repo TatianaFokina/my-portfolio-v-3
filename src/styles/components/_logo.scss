@@ -22,4 +22,10 @@ $logo-width-small: 200px;
 	display: inline-flex;
 	
 	border-bottom: 0;
+	
+	&:hover .logo__image {
+		fill: $icon-link-color--hover;
+		
+		transition: all 0.1s ease-in-out;
+	}
 }

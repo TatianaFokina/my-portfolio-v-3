@@ -17,6 +17,12 @@
 	margin-bottom: $gap-3x;
 }
 
+.socials__item-link:hover .socials__item-link__image {
+	fill: $icon-link-color--hover;
+	
+	transition: all 0.1s ease-in-out;
+}
+
 .copyrights {
 	display: flex;
 	flex-direction: column;
@@ -30,3 +36,4 @@
 		margin-bottom: $gap-2x;
 	}
 }
+
