@@ -5,11 +5,15 @@
 				<ul class="socials">
 					<li class="socials__item">
 						<a class="socials__item-link" href="{{ links.social.twitter }}" target="_blank" rel="noopener noreferrer">
-							<img src="{{ siteLink }}/images/ico-twitter.svg" alt="Твиттер"> </a>
+							{% include "../images/ico-twitter.svg" %}
+							<span class="visually-hidden">Твиттер</span>
+						</a>
 					</li>
 					<li class="socials__item">
 						<a class="socials__item-link" href="{{ links.social.github }}" target="_blank" rel="noopener noreferrer">
-							<img src="{{ siteLink }}/images/ico-github.svg" alt="Гитхаб"> </a>
+							{% include "../images/ico-github.svg" %}
+							<span class="visually-hidden">Гитхаб</span>
+						</a>
 					</li>
 				</ul>
 			</div>
