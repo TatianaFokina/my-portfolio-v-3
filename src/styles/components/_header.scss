@@ -9,7 +9,7 @@
 	
 	z-index: $z-index-1;
 	
-	@include media(sm) {
+	@include media(md) {
 		position: fixed;
 	}
 }

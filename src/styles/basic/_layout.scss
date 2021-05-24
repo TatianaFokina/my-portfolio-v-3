@@ -2,7 +2,7 @@
 @import "../mixins-and-functions";
 
 $container-margin-top: 180px;
-$container-margin-top-mobile: 80px;
+$container-margin-top-mobile: 60px;
 
 * {
 	box-sizing: border-box;
@@ -43,7 +43,7 @@ small {
 	
 	margin-top: $container-margin-top-mobile;
 	
-	@include media(sm) {
+	@include media(md) {
 		margin-top: $container-margin-top;
 	}
 }

@@ -1,4 +1,5 @@
 @import "../_variables.scss";
+@import "../mixins-and-functions";
 
 .visually-hidden {
 	position: absolute;
@@ -19,5 +20,9 @@
 
 .invisible-anchor {
 	position: relative;
-	top: -$gap-29x;
+	top: 0;
+	
+	@include media(md) {
+		top: -$gap-29x;
+	}
 }
