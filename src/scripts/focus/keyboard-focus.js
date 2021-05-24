@@ -1,4 +1,4 @@
-export function keyboardFocus() {
+export function KeyboardFocus() {
 	// Adds keyboard-accessible class to <body>
 	document.addEventListener('keydown', (e) => {
 		if (e.key === 'Tab') {
