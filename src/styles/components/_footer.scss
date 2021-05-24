@@ -17,10 +17,15 @@
 	margin-bottom: $gap-3x;
 }
 
-.socials__item-link:hover .socials__item-link__image {
-	fill: $icon-link-color--hover;
+.socials__item-link {
 	
-	transition: all 0.1s ease-in-out;
+	.socials__item-link__image {
+		transition: fill 0.1s ease-in-out;
+	}
+
+	&:hover .socials__item-link__image {
+		fill: $icon-link-color--hover;
+	}
 }
 
 .copyrights {
