@@ -13,10 +13,7 @@
 }] %}
 
 <nav class="nav" aria-live="polite">
-	<button class="nav__button nav__button--open" aria-controls="menu">
-		<span class="visually-hidden">Открыть меню</span>
-		<span class="visually-hidden">Закрыть меню</span>
-	</button>
+	<button class="nav__button" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню"></button>
 
 	<ul class="nav__menu" id="menu">
 		{% for item in menu %}

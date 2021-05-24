@@ -23,6 +23,7 @@ $hamburger-icon-size: 25px;
 	
 	padding: $gap-4x;
 	
+	background: transparent url(/images/menu-open.svg) no-repeat 50% 50%;
 	width: $hamburger-icon-size;
 	height: $hamburger-icon-size;
 	
@@ -33,16 +34,16 @@ $hamburger-icon-size: 25px;
 	}
 }
 
-.nav__button--open {
-	background: transparent url(/images/menu-open.svg) no-repeat 50% 50%;
-}
-
-.nav__button--close {
+.js-nav__button--close {
 	background: transparent url(/images/menu-close.svg) no-repeat 50% 50%;
 }
 
+.js-nav__button-name--hidden {
+	display: none;
+}
+
 .nav__menu {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	
@@ -52,12 +53,17 @@ $hamburger-icon-size: 25px;
 	list-style: none;
 	
 	@include media(sm) {
+		display: flex;
 		flex-direction: row;
 	}
 	
 	@include media(md) {
 		margin: 0;
 	}
+}
+
+.js-nav__menu--open {
+	display: flex;
 }
 
 .nav__menu-item-link {
