@@ -1,9 +1,6 @@
 @import "../_variables.scss";
 @import "../mixins-and-functions";
 
-$project-heading-margin-top: 2rem;
-$project-heading-margin-bottom: 0.5rem;
-
 .project {
 	display: flex;
 	flex-direction: column;
@@ -18,8 +15,8 @@ $project-heading-margin-bottom: 0.5rem;
 }
 
 .project__heading {
-	margin-top: $project-heading-margin-top;
-	margin-bottom: $project-heading-margin-bottom;
+	margin-top: $gap-10x;
+	margin-bottom: $gap-3x;
 	
 	font-size: var(--step--1);
 	text-transform: uppercase;
