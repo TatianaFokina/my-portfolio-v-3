@@ -1,6 +1,7 @@
 ---
-title: Stylus CSS Grid System
+title: Проект "Stylus CSS Grid System"
 description: Модульная сетка Bootstrap 4 на гридах.
+projectName: Stylus CSS Grid System
 stack:
     - Pug
     - Stylus
@@ -16,7 +17,8 @@ layout: project.njk
 ---
 
 <p>Модульная сетка Bootstrap на Flexbox превращается в элегантную сетку на Grid.</p>
-<img class="fluid-image project__image" src="/images/css-grid-layout-project-main.png" alt="Скриншот страницы сайта с модульной сеткой Бутстрапа 4 на гридах. Слева находится плавающее меню с навигацией по странице, справа — текст с заголовками и примерами кода.">
+
+{% image "./src/projects/stylus-css-grid-system/images/css-grid-layout-project-main.png", "fluid-image project__image", "Скриншот страницы сайта с модульной сеткой Бутстрапа 4 на гридах. Слева находится плавающее меню с навигацией по странице, справа — текст с заголовками и примерами кода.", 980 %}
 
 {% projectColumn %}
     {% projectDesc "Цели и процесс создания проекта" %}
@@ -28,7 +30,7 @@ layout: project.njk
     {% endprojectDesc %}
 {% endprojectColumn %}
 
-<img class="fluid-image project__image" src="/images/css-grid-layout-project-features.png" alt="Пример блоков сетки розового, жёлтого, синего и бирюзового цветов. Над ними описание того, как они работают и какие классы нужно добавлять на страницу, чтобы сетка так выстроилась.">
+{% image "./src/projects/stylus-css-grid-system/images/css-grid-layout-project-features.png", "fluid-image project__image", "Пример блоков сетки розового, жёлтого, синего и бирюзового цветов. Над ними описание того, как они работают и какие классы нужно добавлять на страницу, чтобы сетка так выстроилась.", 980 %}
 
 {% projectDesc "Проблемы, их решение и интересные фичи" %}
     <p>В проекте, кроме Stylus, есть Pug для шаблона страницы. Проект собирала Gulp.</p>
@@ -36,5 +38,5 @@ layout: project.njk
 {% endprojectDesc %}
 
 {% projectDesc "Чему научилась" %}
-    <p>Каких-то особо интересных фич на самой странице с примерами того, как работает сетка, нет. Однако в самом коде можно найти функцию для генерации примеров построения колонок, в которых блоки красятся в случайные цвета.</p>
+    <p>Это был интересный и даже немного программистский опыт работы со Stylus. Я больше узнала о том, что происходит у него под капотом. Ещё познакомилась с возможностями, с которыми не часто сталкиваешься в реальных проектах.</p>
 {% endprojectDesc%}

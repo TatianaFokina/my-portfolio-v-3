@@ -3,7 +3,7 @@
 		<article class="card card--{{ project.data.cardColor }}">
 			<div>
 				<h3 class="card__title">
-					<a class="card__title-link" href="{{ project.url }}">{{ project.data.title }}</a>
+					<a class="card__title-link" href="{{ project.url }}">{{ project.data.projectName }}</a>
 				</h3>
 				<p class="card__description">{{ project.data.description }}</p>
 				<div class="card__tags">
@@ -12,7 +12,8 @@
 					{%- endfor -%}
 				</div>
 			</div>
-			<img class="card__image" src="images/{{ project.data.cardPreview }}" alt="">
+			{% set newurl = './src/pages/images/' %}
+			{% image newurl+project.data.cardPreview, "fluid-image card__image", "", 503 %}
 		</article>
 	{%- endfor -%}
 </div>
