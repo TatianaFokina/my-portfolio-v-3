@@ -33,7 +33,6 @@ $link-focus-color: $gray-500;
 $link-underline-color: $primary-color;
 // Interactive styles
 $link-hover-color: transparentize($link-color, .8);
-
 $focus-color: $secondary-color;
 
 // Cards
@@ -47,7 +46,7 @@ $activity-block-color: $gray-200;
 $activity-text-color: $gray-300;
 
 // Font: font-size, line-height
-$text-font-family: "Roboto", sans-serif;
+$text-font-family: "Roboto", "Arial", "Helvetica", sans-serif;
 
 $font-size-base: 20px;
 
