@@ -23,7 +23,7 @@ $hamburger-icon-size: 25px;
 	
 	padding: $gap-4x;
 	
-	background: transparent url(/images/menu-open.svg) no-repeat 50% 50%;
+	background: transparent url(../assets/menu-open.svg) no-repeat 50% 50%;
 	width: $hamburger-icon-size;
 	height: $hamburger-icon-size;
 	
@@ -35,7 +35,7 @@ $hamburger-icon-size: 25px;
 }
 
 .js-nav__button--close {
-	background: transparent url(/images/menu-close.svg) no-repeat 50% 50%;
+	background: transparent url(../assets/menu-close.svg) no-repeat 50% 50%;
 }
 
 .js-nav__button-name--hidden {
