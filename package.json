@@ -6,7 +6,7 @@
   "author": "Tatiana Fokina",
   "license": "ISC",
   "scripts": {
-    "start": "eleventy --serve --quiet",
+    "start": "eleventy --serve",
     "build": "rimraf test && eleventy --quiet && gulp build"
   },
   "devDependencies": {
