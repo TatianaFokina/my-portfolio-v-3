@@ -27,13 +27,13 @@ $selection-color: transparentize($primary-color, .8);
 
 // Links
 $link-color: $gray-400;
-$link-color--hover: $primary-color;
-$icon-link-color--hover: $secondary-color;
-$link-focus-color: $gray-500;
 $link-underline-color: $primary-color;
 // Interactive styles
-$link-hover-color: transparentize($link-color, .8);
-$focus-color: $secondary-color;
+$link-color--hover: $primary-color;
+$link-color--visited: $blue-gray;
+$icon-link-color--hover: $secondary-color;
+$link-underline-color--visited: $gray-300;
+$link-focus-color: $gray-500;
 
 // Cards
 $card-primary-color: transparentize($primary-color, .8);

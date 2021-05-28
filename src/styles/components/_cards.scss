@@ -65,7 +65,13 @@
 		bottom: 0;
 	}
 	
-	&:hover {
+	&:hover,
+	&:visited:hover {
+		color: inherit;
+		border-bottom: 0;
+	}
+	
+	&:visited {
 		color: inherit;
 	}
 }
