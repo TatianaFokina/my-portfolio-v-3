@@ -4,7 +4,9 @@ const Image = require("@11ty/eleventy-img");
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/fonts");
 	eleventyConfig.addPassthroughCopy("src/scripts");
-	eleventyConfig.addPassthroughCopy({ "src/**/*.{svg,jpg,png}": "images" });
+	eleventyConfig.addPassthroughCopy({ "src/assets/*.{svg,jpg,png}": "assets" });
+	eleventyConfig.addPassthroughCopy({ "src/assets/favicons/*.{svg,jpg,png}": "assets/favicons" });
+	eleventyConfig.addPassthroughCopy({ "src/pages/images/**/*.svg": "images" });
 	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
 	// Styles
