@@ -66,14 +66,29 @@ $hamburger-icon-size: 25px;
 	display: flex;
 }
 
+.nav__menu-item {
+	width: 100%;
+	
+	@include media(sm) {
+		width: auto;
+	}
+}
+
 .nav__menu-item-link {
 	display: inline-flex;
+	justify-content: center;
 	position: relative;
+	width: 100%;
 	
 	padding: $gap-5x;
 	
 	line-height: $line-height-menu-link;
 	border-bottom: 0;
+	
+	@include media(sm) {
+		justify-content: flex-start;
+		width: auto;
+	}
 }
 
 .nav__menu-item-link-text {
