@@ -89,9 +89,3 @@ exports.build = series(
 	parallel(scripts, styles),
 	copy
 );
-
-exports.build = series(
-	clean,
-	parallel(scripts, styles),
-	copy
-);
