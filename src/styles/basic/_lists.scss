@@ -1,19 +1,22 @@
 @import "../_variables.scss";
 
 .skills,
-.writes {
+.writes,
+.project__stack {
     padding: 0 0 0 $gap-5x;
     
     list-style: none;
 }
 
-// Skills list
+// Skills & project stack list
 
-.skills {
+.skills,
+.project__stack {
     margin: 0;
 }
 
-.skills__item {
+.skills__item,
+.project-info__stack-item {
     &:not(:last-of-type) {
         padding-bottom: $gap-1x;
     }
