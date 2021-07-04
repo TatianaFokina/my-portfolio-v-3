@@ -17,11 +17,6 @@
 
 	<ul class="nav__menu" id="menu">
 		{% for item in menu %}
-			{% if item.url and item.url == page.url %}
-				{% set currentSection = true %}
-			{% else %}
-				{% set currentSection = false %}
-			{% endif %}
 			<li class="nav__menu-item">
 				<a class="nav__menu-item-link" href="{{ item.anchorLink }}">
 					<span class="nav__menu-item-link-text">{{ item.title }}</span>
