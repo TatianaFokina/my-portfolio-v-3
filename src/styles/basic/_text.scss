@@ -14,3 +14,7 @@ p {
         margin-bottom: 0;
     }
 }
+
+::selection {
+    background: $selection-color;
+}

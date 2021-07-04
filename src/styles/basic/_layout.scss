@@ -9,11 +9,11 @@ $container-margin-top-mobile: 60px;
 	color: inherit;
 }
 
-html {
+.page {
 	font-size: $font-size-base;
 }
 
-body {
+.body {
 	//- Sticky footer
 	display: flex;
 	flex-direction: column;
@@ -29,14 +29,10 @@ body {
 	background-color: $bg-color;
 }
 
-::selection {
-	background: $selection-color;
-}
 
-small {
-	font-size: var(--step--1);
-}
 
+
+// Container and content
 .container {
 	//- Sticky footer
 	flex: 1 0 auto;

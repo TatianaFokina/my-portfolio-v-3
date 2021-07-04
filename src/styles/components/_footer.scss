@@ -37,6 +37,8 @@
 .copyrights__item {
 	display: block;
 	
+	font-size: var(--step--1);
+	
 	&:not(:last-of-type) {
 		margin-bottom: $gap-2x;
 	}
