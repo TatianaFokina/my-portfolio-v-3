@@ -5,23 +5,27 @@
 	title: "Проекты",
 	anchorLink: "/#projects"
 },{
-	title: "Я в телевизоре",
+	title: "Активности",
 	anchorLink: "/#mediaLife"
 },{
 	title: "Контакты",
 	anchorLink: "/#contacts"
 }] %}
 
-<nav class="nav" aria-live="polite">
-	<button class="nav__button" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню"></button>
+<nav class="nav">
+	{% include "logo.njk" %}
 
-	<ul class="nav__menu" id="menu">
-		{% for item in menu %}
-			<li class="nav__menu-item">
-				<a class="nav__menu-item-link" href="{{ item.anchorLink }}">
-					<span class="nav__menu-item-link-text">{{ item.title }}</span>
-				</a>
-			</li>
-		{% endfor %}
-	</ul>
+	<div class="menu" aria-live="polite">
+		<button class="menu__button" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню"></button>
+
+		<ul class="menu__list" id="menu">
+			{% for item in menu %}
+				<li class="menu__list-item">
+					<a class="menu__list-link" href="{{ item.anchorLink }}">
+						<span class="menu__list-link__text">{{ item.title }}</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
 </nav>
