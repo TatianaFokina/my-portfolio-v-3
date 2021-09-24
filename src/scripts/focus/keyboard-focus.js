@@ -1,13 +1,15 @@
 export function KeyboardFocus() {
-	// Adds keyboard-accessible class to <body>
-	document.addEventListener('keydown', (e) => {
-		if (e.key === 'Tab') {
-			document.body.classList.add('keyboard-focus');
+	const $keyboardClass = "keyboard-focus";
+
+	// Add keyboard-accessible class to <body>
+	document.addEventListener("keydown", (e) => {
+		if (e.key === "Tab") {
+			document.body.classList.add($keyboardClass);
 		}
 	});
 
-	// Removes class from <body> in CSS
-	document.addEventListener('mousedown', () => {
-		document.body.classList.remove('keyboard-focus');
+	// Remove class from <body>
+	document.addEventListener("mousedown", () => {
+		document.body.classList.remove($keyboardClass);
 	});
 }
