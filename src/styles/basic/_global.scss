@@ -18,11 +18,16 @@
 	height: auto;
 }
 
-.invisible-anchor {
+.anchor-target {
 	position: relative;
-	top: 0;
+	scroll-margin-top: 0;
 	
 	@include media(md) {
-		top: -$gap-29x;
+		scroll-margin-top: $gap-31x;
+	}
+	
+	// Fix for hack for anchors links
+	&[tabindex] {
+		outline: none;
 	}
 }
