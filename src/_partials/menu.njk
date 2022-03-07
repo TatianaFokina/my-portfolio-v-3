@@ -1,14 +1,14 @@
 {% set menu = [{
-	title: "Навыки",
+	title: "Skills",
 	anchorLink: "/#skills"
 },{
-	title: "Проекты",
+	title: "Projects",
 	anchorLink: "/#projects"
 },{
-	title: "Активности",
+	title: "Activities",
 	anchorLink: "/#mediaLife"
 },{
-	title: "Контакты",
+	title: "Contacts",
 	anchorLink: "/#contacts"
 }] %}
 
@@ -16,7 +16,7 @@
 	{% include "logo.njk" %}
 
 	<div class="menu">
-		<button class="menu__button" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню"></button>
+		<button class="menu__button" aria-controls="menu" aria-expanded="false" aria-label="Open a menu"></button>
 
 		<ul class="menu__list" id="menu">
 			{% for item in menu %}

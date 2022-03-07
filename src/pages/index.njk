@@ -6,62 +6,63 @@ permalink: index.html
 <div class="container">
 	<div class="content">
 		<main class="main anchor-target" id="main-content">
-			<h1 class="visually-hidden">Обо мне, моих навыках, проектах и активностях</h1>
+			<h1 class="visually-hidden">About me, my skills, projects and activities</h1>
 
 			<div class="two-column-section">
 				<div>
-					<p>Привет! Меня зовут Таня. Я веб-разработчица из Санкт-Петербурга.</p>
-					<p>Мне нравится веб. Люблю учиться, узнавать новое о веб-разработке и приобретать полезные навыки. Главная профессиональная цель — помогать создавать доступные, адаптивные и удобные интерфейсы, которые нравятся людям и которыми хочется пользоваться.</p>
-					<p>Пишу и перевожу статьи о доступности в вебе, веду про это <a href="https://tatiana-fokina-blog.ru">блог</a> и иногда выступаю с докладами. Также организую петербургский митап о веб-доступности pitera11y__meetup.</p>
+					<p>Hi! I’m Tanya and I’m a web-developer.</p>
+					<p>I fond of web. Also I like to learn and explore something new about development, and gain useful developer skills. My main professional goal is helping to create an accessible, adaptive and user friendly interfaces which people like.</p>
+					<p>I write and translate an articles about accessibility, write a posts about it in my own blog and sometimes I have a talks. Also I’m a co-organizer of the first Russian language meetup about accessibility pitera11y_meetup.</p>
 				</div>
 				<div>
-					{% image "./src/pages/images/hero-photo.png", "fluid-image", "Девушка с тёмно-каштановыми короткими волосами и серо-зелёными глазами со слегка повёрнутой вправо головой. Одета в тёмно-синюю, почти чёрную рубашку.", 420 %}
+					{% image "./src/pages/images/hero-photo.png", "fluid-image", "A pale girl with mousy-brown neck-length hair and grey and green eyes. Her head slightly turn to right. She is wearing a navy blue shirt.", 420 %}
 				</div>
 			</div>
 
-			<h2 class="anchor-target" id="skills">Навыки 🧠</h2>
+			<h2 class="anchor-target" id="skills">Skills 🧠</h2>
 			{% include "skills-list.njk" %}
 
-			<h2 class="anchor-target" id="projects">Проекты 🧪</h2>
+			<h2 class="anchor-target" id="projects">Projects 🧪</h2>
 			{% include "project-cards.njk" %}
 
-			<h2 class="anchor-target" id="mediaLife">Активности 🎤</h2>
-			<p>Иногда оказываюсь в подкастах и выступаю с докладами угадайте о чём 😉 Один раз вела коллективный аккаунт разработчиков jsunderhood в Твиттере.</p>
+			<h2 class="anchor-target" id="mediaLife">Activities 🎤</h2>
+			<p>Sometimes I join to an IT-podcasts and have a talks at meetups and conferences about you can guess the topic 😉 Once I drove a big collective Twitter account for developers which called jsunderhood.</p>
 			{% include "activity.njk" %}
-			<h3>Статьи и переводы</h3>
-			<p>Мне нравится делиться знаниями с другими и узнавать новое самой. Поэтому, когда я не пишу код, то перевожу и пишу про веб-доступность.</p>
+			<h3>Articles and Translations</h3>
+			<p>I like to share my knowledge with another people and learn something new by myself. Therefore I write and translate a texts about accessibility when I don’t write a code.</p>
+			<p>Here some of my articles.</p>
 			<ul class="writes">
 				<li class="writes__item">
-					<a href="{{ links.public.articleFirst }}">«Аудит доступности: основы»</a>.
+					<a href="{{ links.public.articleFirst }}">‘Accessibility Audit: Basics’</a> (RU).
 				</li>
 				<li class="writes__item">
-					<a href="{{ links.public.articleSecond }}">«Доступность и закон»</a>.
+					<a href="{{ links.public.articleSecond }}">‘Accessibility and Law’</a> (RU).
 				</li>
 				<li class="writes__item">
-					<a href="{{ links.public.articleThird }}">Статья для Доки про скринридеры</a>.
+					<a href="{{ links.public.articleThird }}">Article for a Russian language open-source project ‘Doka’ about screen readers</a> (RU).
 				</li>
-				<li class="writes__item">Перевод статьи Хейдона Пикеринга
-					<a href="{{ links.public.articleTranslate }}">«Инклюзивные компоненты: интерфейсы со вкладками»</a>.
+				<li class="writes__item">Translation of Heydon Pickering’s article
+					<a href="{{ links.public.articleTranslate }}">‘Tabbed Interfaces’</a> (RU).
 				</li>
 			</ul>
-			<p>Ещё больше моих текстов собрано в
-				<a href="{{ links.public.linksRepo }}">репозитории на GitHub</a>.
+			<p>You can find a complete list of my posts, articles and translations on
+				<a href="{{ links.public.linksRepo }}">GitHub</a>.
 			</p>
 			<h3>Pitera11y_meetup</h3>
 			<div class="two-column-section">
 				<div>
-					<p>Или питерали митап, если сомневались, как это произносить. Это первый в России митап по веб-доступности. Его аудитория — разработчики, дизайнеры, тестировщики, технические писатели и все-все-все, кто причастен к созданию чего-то в вебе.</p>
-					<p>Я, как и другие ребята, ищу спикеров, помогаю в подготовке докладов, договариваюсь с площадками, пишу анонсы и готовлю графику. Из необычного и того, что пока мало кто делает в маленьких IT-сообществах, — добавляю русские субтитры к записям докладов.
-						<a href="{{ links.public.pitera11yPlaylist }}">Плейлист с докладами</a> можно посмотреть на канале pitercss_meetup.
+					<p>This is the first Russian language meetup about accessibility. The audience is various. This meetup for developers, designers, QA engineers, technical writers and everybody else who is a part of creation something in the Internet.</p>
+					<p>I like other organizers find a speakers, help to make a talks, arranges with owners of platforms and places, write an announcements and create a graphics. The most interesting part of it add a hand Russian captions for meetup video. There is a
+						<a href="{{ links.public.pitera11yPlaylist }}">list of every talks on YouTube</a>.
 					</p>
 				</div>
 				<div>
-					{% image "./src/pages/images/pitera11y-dogs.png", "fluid-image", "Инклюзивные пиксельные корги. Один из них в солнцезащитных очках, второй с повреждённой лапой, третий в повязке на глазе и четвёртый в очках с диоптриями.", 478 %}
+					{% image "./src/pages/images/pitera11y-dogs.png", "fluid-image", "An inclusive pixel corgis. One of them is wearing sunglasses. The second one have an injury paw. The third one have an eye patch. The last one is wearing a glasses.", 478 %}
 				</div>
 			</div>
 
-			<h2 class="anchor-target" id="contacts">Контакты 📬</h2>
-			<p>Сейчас ищу новую работу. Если хотите увидеть моё резюме, предложить вакансию или просто сказать привет, можете написать на почту <a href="mailto:{{ links.social.email }}">fokinatatian@gmail.com</a>. Если удобнее написать в Telegram, то ищите там <a href="{{ links.social.telegram }}">@fokina_tatiana</a>.</p>
+			<h2 class="anchor-target" id="contacts">Contacts 📬</h2>
+			<p>Now I’m looking for a job opportunity. If you want to see my CV, share an open positions or just say “Hi!” then you can write email for <a href="mailto:{{ links.social.email }}">fokinatatian@gmail.com</a>. Also you can find me in Telegram messenger. Just search <a href="{{ links.social.telegram }}">@fokina_tatiana</a>.</p>
 		</main>
 	</div>
 </div>
