@@ -1,6 +1,6 @@
 ---
 title: Project Accessibility Guidelines
-description: Multi-page site which contains recommendations about accessibility for developers and designers teams.
+description: Multi-page site which contains recommendations about accessibility for a developers and designers teams.
 projectName: Accessibility Guidelines
 stack:
     - Pug
@@ -16,38 +16,40 @@ tags: project
 layout: project.njk
 ---
 
-<p>Этот гайд я написала для коллег из JUG Ru Group на основе базовых советов по цифровой доступности из статей, других руководств и собственной практики.</p>
-<p>Работала над проектом одна и без макета. Дизайнила в браузере и вдохновлялась другими гайдами по доступности. Иногда заглядывала в Dribbble, но слишком этим не увлекалась.</p>
+<p>This guide I created for my ex-colleagues from <a href="https://jugru.org/en/">JUG Ru Group</a>. This is based on a common recommendations about accessibility from another guides, articles, checklists and my own experience.</p>
+<p>Design and content are my own. I’ve designed the site in a browser and inspired by another guides and some design works from Dribbble.</p>
 
-{% image "./src/projects/a11y-team-guide/images/guides-project-main.png", "fluid-image project__image", "Скриншот главной страницы Гайда. На ней меню с навигацией, основной заголовок страницы, описание проекта и ссылки на Гайд для разработчиков и Гайд для дизайнеров.", 980 %}
+{% image "./src/projects/a11y-team-guide/images/guides-project-main.png", "fluid-image project__image", "The guide main page. There are a menu with navigation, the second level heading, a project description and a links to a developer guide page and a designer guide page.", 980 %}
 
 {% projectColumn %}
-    {% projectDesc "Цели и процесс создания проекта" %}
-        <p>Мне хотелось поделиться своими знания о доступности с большей аудиторией. Поэтому я превратила гайд из текстового документа в небольшой сайт. Также мне давно хотелось попробовать сделать цветовые темы на CSS. Небольшой проект, тем более по доступности, — хорошая площадка для таких экспериментов.</p>
-        <p>Сначала думала сверстать его как лендинг с отдельными вкладками с гайдами для разработчиков и дизайнеров. Потом поняла, что это неудачная идея для большого текста. Так что выбрала многостраничный формат.</p>
+    {% projectDesc "Project Purpose and Goal" %}
+        <p>I wanted to share my knowledge about accessibility with a big audience. Therefore I’ve turned a simple text document into a website.</p>
+        <p>Also I wanted to develop a CSS color themes. A small and accessibility theme project is a good way for alike experiments.</p>
+        <p>My first thought was a landing page with a tab panel with a developers and designers guides. But I realized that it was a bad idea and chose a multi-page site format.</p>
     {% endprojectDesc %}
 
-    {% projectDesc "Выбор стека" %}
-        <p>Проект состоит из пары шаблонных страниц. С этим помогает справиться Pug. SCSS выбрала из-за миксинов и глобальных переменных.</p>
-        <p>Сначала хотела использовать в качестве сборщика Webpack, но потом передумала. Проект не требует сложной конфигурации. В итоге я остановилась на Parcel. Он простой, быстрый, много полезных фич работают из коробки и его не нужно долго настраивать.</p>
+    {% projectDesc "Web Stack and Explanation" %}
+        <p>The project including a few template pages. I can handle it by Pug. I choose SCSS because it has a mixins and a global variables.</p>
+        <p>I wanted to use Webpack from the start, but I changed my mind later. The project is small and it doesn’t need this complicated and flexing bundler. I choose Parcel instead of Webpack. It’s small, simple, fast, has a lot of useful features out of the box and it doesn’t need to configurate for a long time.</p>
     {% endprojectDesc%}
 {% endprojectColumn %}
 
-{% projectDesc "Проблемы, их решение и интересные фичи" %}
-    <p>Когда собирала прод-версию проекта, то стандартных возможностей Parcel не хватило. Нужно было разложить файлы по папкам, и в текущей версии сборщика это решается при помощи плагинов. Решение нашла на GitHub. Оно показалось неудобным, но подошло для этого проекта.</p>
-    <p>В Pug встретились ограничения в форматировании сниппетов. Не весь код правильно парсился. Не стала подключать плагины, так как тащить лишний код в проект из-за пары примеров кода не хотелось. Решила, что лучше воспользоваться кривым, но работающим нативным костылём препроцессора.</p>
-    <p>Из важных доступных фич в проекте есть ссылка «К основному контенту» и поддержка светлой и тёмной тем. Темы написаны на CSS-переменных и на чистом JavaScript. В скрипте добавляется класс для тёмной темы к тегу body, показывается нужный текст и иконка, а выбранная тема сохраняется в localStorage. Дополнительно он определяет выбранную в операционной системе цветовую схему.</p>
-    <p>Верстала адаптивно и доступно, поэтому сайт хорошо выглядит на разных размерах экранов, в современных браузерах и его не боятся скринридеры. Тестировала в десктопном и мобильном Chrome 86+ и  Safari 13+, FireFox 84+, Vivaldi 3+ и Edge 88+. От поддержки IE 11 отказалась. Из скринридеров проверяла JAWS в Chrome и Firefox, а также VoiceOver в Safari.</p>
+{% projectDesc "Problems, Thought Process and Interesting Feautures" %}
+    <p>I had one big issue with Parcel. There was no standard solutions for sort a files in a different folders. Because of that I used a few extra plugins for fix this problem. I’ve found the solution on GitHub. It was convenient for my small project, but isn’t so good for a bigger one.</p>
+    <p>The more minor problem with Pug was a code snippets formatting. Not all of it was parcing right. I didn’t want to add extra plugins because I didn’t like the idea to use a lot of extra side code for a few snippets. And I chose not so great but native way to formatting code snippets in Pug.</p>
+    <p>There are a few interesting features in the project. I mean the skip link and the dark and light themes. Themes was wrote with CSS variables and vanilla JavaScript. In my script I add a class for the dark theme for body tag. It changes a text and an icon for a switcher and the current theme saves in localStorage. Also the script detects a current theme of operation systems and user preferences.</p>
+    <p>The site is adaptive and accessible (not for 100 % of course). I’ve tested it in the desktop and mobile versions of Chrome 86+, Safari 13+, FireFox 84+, Vivaldi 3+ and Edge 88+. Also I’ve tested it with JAWS in Chrome and Firefox, and VoiceOver in Safari.</p>
 {% endprojectDesc%}
 
-{% image "./src/projects/a11y-team-guide/images/guides-project-features.png", "fluid-image project__image", "Скриншоты сайта с гайдом в двух браузерах: Хроме и Эдже. Также скриншот с отчётом Lighthouse. Метрики производительность, доступность, лучшие практики и SEO набрали по 100 баллов.", 980 %}
+{% image "./src/projects/a11y-team-guide/images/guides-project-features.png", "fluid-image project__image", "A two screenshots of the main giude page with dark theme and the developer guide page with light theme. Also there is a Lighthouse report. It says that perfomance, accessibility, best practices and SEO are 100%.", 980 %}
 
 {% projectColumn %}
-    {% projectDesc "Чему научилась" %}
-        <p>Во-первых, узнала как сверстать переключение тем на CSS-переменных, доступный элемент карточки и ссылку, которая ведёт к основному контенту. Во-вторых, впервые попробовала в качестве сборщика Parcel. Научилась его минимально настраивать и подключать дополнительные плагины.</p>
+    {% projectDesc "What I’ve learned" %}
+        <p>First of all I’ve learned how to make a color themes based on CSS variables. Also I’ve learned how to create a theme switcher and an accessible card component, and skip link.</p>
+        <p>At the second hand I’ve used Parcel like a web application bundler for the first time. I’ve learned how to setting it and use an extra plugins.</p>
     {% endprojectDesc%}
 
-    {% projectDesc "Что дальше?" %}
-        <p>В планах дополнить советы для разработчиков и дизайнеров и добавить гайд для тестировщиков.</p>
+    {% projectDesc "Future Improvements" %}
+        <p>In a future I’ll want to improve existing guides for a developers and designers, add a new guide for QA engineers and create more smoothing theme switching.</p>
     {% endprojectDesc%}
 {% endprojectColumn %}

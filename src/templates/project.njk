@@ -8,7 +8,7 @@ layout: page.njk
 			<h1>{{ projectName }}</h1>
 			<div class="project">
 				<div>
-					<h2 class="project__heading">🔧 Стек</h2>
+					<h2 class="project__heading">Stack 🔧</h2>
 					<ul class="project__stack">
 						{%- for tag in stack -%}
 							<li class="project-info__stack-item">{{ tag }}</li>
@@ -17,17 +17,17 @@ layout: page.njk
 				</div>
 
 				<div>
-					<h2 class="project__heading">📅 Год</h2>
+					<h2 class="project__heading">Year 📅</h2>
 					<time class="project__year">{{ year }}</time>
 				</div>
 
 				<div>
-					<h2 class="project__heading">🎮 Демо</h2>
-					<a class="project__demo" href="{{ demoLink }}">Посмотреть сайт</a>
+					<h2 class="project__heading">Demo 🎮</h2>
+					<a class="project__demo" href="{{ demoLink }}">Go to the site</a>
 				</div>
 
 				<div>
-					<h2 class="project__heading">📁 Репозиторий</h2>
+					<h2 class="project__heading">Repository 📁</h2>
 					<a class="project__repo" href="{{ repoLink }}">GitHub</a>
 				</div>
 			</div>
