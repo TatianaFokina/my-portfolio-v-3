@@ -16,27 +16,27 @@ tags: project
 layout: project.njk
 ---
 
-<p>Модульная сетка Bootstrap на Flexbox превращается в элегантную сетку на Grid.</p>
+<p>This is a grid system based on CSS Grid and Bootstrap. Previously Bootstrap uses only CSS Flexbox.</p>
 
-{% image "./src/projects/stylus-css-grid-system/images/css-grid-layout-project-main.png", "fluid-image project__image", "Скриншот страницы сайта с модульной сеткой Бутстрапа 4 на гридах. Слева находится плавающее меню с навигацией по странице, справа — текст с заголовками и примерами кода.", 980 %}
+{% image "./src/projects/stylus-css-grid-system/images/css-grid-layout-project-main.png", "fluid-image project__image", "There is a screenshot of a page with a new grid system based on Bootstrap 4. In the left part of the page is a sticky navigation menu. On the right are headings, text content, and code snippets.", 980 %}
 
 {% projectColumn %}
-    {% projectDesc "Цели и процесс создания проекта" %}
-        <p>Этим проектом занялась из исследовательских интересов. Мне хотелось сравнить как работают CSS Flexbox и CSS Grid и больше познакомиться с возможностями препроцессора Stylus. </p>
-        <p>Для этого перенесла основные классы и функции модульной сетки Bootstrap 4 и автоматизировала её построение с помощью переменных, миксинов и других фич Stylus. Всё это дело визуализировала и прокомментировала на небольшом одностраничном сайте на английском языке.</p>
+    {% projectDesc "Project Purpose and Goal" %}
+        <p>The project is an experiment. I wanted to see the difference between CSS Flexbox and CSS Grid and try something new with Stylus.</p>
+        <p>I used basic classes and functions of the Bootstrap 4 grid system, but changed it and customized it with Stylus variables, mixins, and other preprocessor features. I created a landing page with a visualization of the new grid system and with comments.</p>
     {% endprojectDesc %}
-    {% projectDesc "Выбор стека" %}
-        <p>В проекте, кроме Stylus, есть Pug для шаблона страницы. Проект собирала Gulp.</p>
+    {% projectDesc "Web Stack and Explanation" %}
+        <p>The stack includes Stylus and Pug for templates. The project is built on Gulp.</p>
     {% endprojectDesc %}
 {% endprojectColumn %}
 
-{% image "./src/projects/stylus-css-grid-system/images/css-grid-layout-project-features.png", "fluid-image project__image", "Пример блоков сетки розового, жёлтого, синего и бирюзового цветов. Над ними описание того, как они работают и какие классы нужно добавлять на страницу, чтобы сетка так выстроилась.", 980 %}
+{% image "./src/projects/stylus-css-grid-system/images/css-grid-layout-project-features.png", "fluid-image project__image", "The example of module blocks. There is a description of how to use the system under them.", 980 %}
 
-{% projectDesc "Проблемы, их решение и интересные фичи" %}
-    <p>В проекте, кроме Stylus, есть Pug для шаблона страницы. Проект собирала Gulp.</p>
-    <p>Каких-то особо интересных фич на самой странице с примерами того, как работает сетка, нет. Однако в самом коде можно найти функцию для генерации примеров построения колонок, в которых блоки красятся в случайные цвета.</p>
+{% projectDesc "Problems, Thought Process, and Interesting Features" %}
+    <p>Sometimes I've faced problems because there isn't so good and full Stylus documentation. But Google is a good way to fix it.</p>
+    <p>There aren't something interesting and extraordinary features on the project page. But in a codebase, you can find a function for the generation of columns in random colors.</p>
 {% endprojectDesc %}
 
-{% projectDesc "Чему научилась" %}
-    <p>Это был интересный и даже немного программистский опыт работы со Stylus. Я больше узнала о том, что происходит у него под капотом. Ещё познакомилась с возможностями, с которыми не часто сталкиваешься в реальных проектах.</p>
+{% projectDesc "What I've learned" %}
+    <p>This was an interesting and slightly programming experience with Stylus. I've known more about how it works under the hood. And I've learned about a lot of hidden features of the preprocessor.</p>
 {% endprojectDesc%}
