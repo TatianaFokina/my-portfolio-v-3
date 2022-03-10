@@ -1,18 +1,18 @@
-# Портфолио Фокиной Татьяны
-## О проекте
-Третья версия моего портфолио.
-## Технологии
-Проект работает на движке [11ty](https://www.11ty.dev). Для шаблонов используется [Nunjucks](https://mozilla.github.io/nunjucks/), для стилей — SCSS, скрипты написаны на ванильном JavaScript.
-## Разработка
-Установка зависимостей:
+# Portfolio of Tatiana Fokina
+## About the project
+This is the third version of my portfolio.
+## Tech stack
+Powered by [11ty](https://www.11ty.dev) and [Nunjucks](https://mozilla.github.io/nunjucks/) for templates, SCSS for styles, and JavaScript.
+## A development process
+For installing.
 ```
 npm install
 ```
-Запуск тестовой сборки для локальной разработки:
+For a test and a local deployment.
 ```
 npm test
 ```
-Запуск финальной сборки для деплоя:
+For the final deployment.
 ```
 npm run build
 ```
