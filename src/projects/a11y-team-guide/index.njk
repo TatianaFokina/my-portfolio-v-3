@@ -1,6 +1,6 @@
 ---
 title: Project Accessibility Guidelines
-description: Multi-page site which contains recommendations about accessibility for a developers and designers teams.
+description: The multi-page site. It contains recommendations about accessibility for developers and designers teams.
 projectName: Accessibility Guidelines
 stack:
     - Pug
@@ -16,40 +16,40 @@ tags: project
 layout: project.njk
 ---
 
-<p>This guide I created for my ex-colleagues from <a href="https://jugru.org/en/">JUG Ru Group</a>. This is based on a common recommendations about accessibility from another guides, articles, checklists and my own experience.</p>
-<p>Design and content are my own. I’ve designed the site in a browser and inspired by another guides and some design works from Dribbble.</p>
+<p>This guide I created for my ex-colleagues from <a href="https://jugru.org/en/">JUG Ru Group</a>. This is based on common recommendations about accessibility from other guides, articles, checklists, and my own experience.</p>
+<p>Design and content are my own. I've designed the site in a browser and was inspired by other guides and some design works from Dribbble.</p>
 
 {% image "./src/projects/a11y-team-guide/images/guides-project-main.png", "fluid-image project__image", "The guide main page. There are a menu with navigation, the second level heading, a project description and a links to a developer guide page and a designer guide page.", 980 %}
 
 {% projectColumn %}
     {% projectDesc "Project Purpose and Goal" %}
-        <p>I wanted to share my knowledge about accessibility with a big audience. Therefore I’ve turned a simple text document into a website.</p>
-        <p>Also I wanted to develop a CSS color themes. A small and accessibility theme project is a good way for alike experiments.</p>
-        <p>My first thought was a landing page with a tab panel with a developers and designers guides. But I realized that it was a bad idea and chose a multi-page site format.</p>
+        <p>I wanted to share my knowledge about accessibility with a big audience. Therefore I've turned a simple text document into a website.</p>
+        <p>Also, I wanted to develop CSS color themes. A small and accessibility theme project is a good way for alike experiments.</p>
+        <p>My first thought was a landing page with a tab panel with developer and designers' guides. But I realized that it was a bad idea and chose a multi-page site format.</p>
     {% endprojectDesc %}
 
     {% projectDesc "Web Stack and Explanation" %}
-        <p>The project including a few template pages. I can handle it by Pug. I choose SCSS because it has a mixins and a global variables.</p>
-        <p>I wanted to use Webpack from the start, but I changed my mind later. The project is small and it doesn’t need this complicated and flexing bundler. I choose Parcel instead of Webpack. It’s small, simple, fast, has a lot of useful features out of the box and it doesn’t need to configurate for a long time.</p>
+        <p>The project includes a few template pages. I can handle it by Pug. I choose SCSS because it has mixins and global variables.</p>
+        <p>I wanted to use Webpack from the start, but I changed my mind later. The project is small and it doesn't need this complicated and flexing bundler. I choose Parcel instead of Webpack. It's small, simple, fast, has a lot of useful features out of the box and it doesn't need to configure for a long time.</p>
     {% endprojectDesc%}
 {% endprojectColumn %}
 
-{% projectDesc "Problems, Thought Process and Interesting Feautures" %}
-    <p>I had one big issue with Parcel. There was no standard solutions for sort a files in a different folders. Because of that I used a few extra plugins for fix this problem. I’ve found the solution on GitHub. It was convenient for my small project, but isn’t so good for a bigger one.</p>
-    <p>The more minor problem with Pug was a code snippets formatting. Not all of it was parcing right. I didn’t want to add extra plugins because I didn’t like the idea to use a lot of extra side code for a few snippets. And I chose not so great but native way to formatting code snippets in Pug.</p>
-    <p>There are a few interesting features in the project. I mean the skip link and the dark and light themes. Themes was wrote with CSS variables and vanilla JavaScript. In my script I add a class for the dark theme for body tag. It changes a text and an icon for a switcher and the current theme saves in localStorage. Also the script detects a current theme of operation systems and user preferences.</p>
-    <p>The site is adaptive and accessible (not for 100 % of course). I’ve tested it in the desktop and mobile versions of Chrome 86+, Safari 13+, FireFox 84+, Vivaldi 3+ and Edge 88+. Also I’ve tested it with JAWS in Chrome and Firefox, and VoiceOver in Safari.</p>
+{% projectDesc "Problems, Thought Process, and Interesting Features" %}
+    <p>I had one big issue with Parcel. There were no standard solutions to sort files in different folders. Because of that, I used a few extra plugins to fix this problem. I've found the solution on GitHub. It was convenient for my small project but isn't so good for a bigger one.</p>
+    <p>The more minor problem with Pug was code snippets formatting. Not all of it was pasing right. I didn't want to add extra plugins because I didn't like the idea to use a lot of extra side code for a few snippets. And I chose not so great but native way to formatting code snippets in Pug.</p>
+    <p>There are a few interesting features in the project. I mean the skip link and the dark and light themes. I wrote the themes with CSS variables and vanilla JavaScript. In my script, I add a class for the dark theme for the body tag. It changes a text and an icon for a switcher and the current theme saves in localStorage. The script detects a current theme of operation systems and user preferences.</p>
+    <p>The site is adaptive and accessible (not for 100 %, of course). I've tested it in the desktop and mobile versions of Chrome 86+, Safari 13+, Firefox 84+, Vivaldi 3+, and Edge 88+. Also, I've tested it with JAWS in Chrome and Firefox, and VoiceOver in Safari.</p>
 {% endprojectDesc%}
 
-{% image "./src/projects/a11y-team-guide/images/guides-project-features.png", "fluid-image project__image", "A two screenshots of the main giude page with dark theme and the developer guide page with light theme. Also there is a Lighthouse report. It says that perfomance, accessibility, best practices and SEO are 100%.", 980 %}
+{% image "./src/projects/a11y-team-guide/images/guides-project-features.png", "fluid-image project__image", "A two screenshots of the main giude page with a dark theme and the developer guide page with a light theme. Also there is a Lighthouse report. It says that perfomance, accessibility, best practices and SEO are 100%.", 980 %}
 
 {% projectColumn %}
-    {% projectDesc "What I’ve learned" %}
-        <p>First of all I’ve learned how to make a color themes based on CSS variables. Also I’ve learned how to create a theme switcher and an accessible card component, and skip link.</p>
-        <p>At the second hand I’ve used Parcel like a web application bundler for the first time. I’ve learned how to setting it and use an extra plugins.</p>
+    {% projectDesc "What I've learned" %}
+        <p>First of all, I've learned how to make the color themes based on CSS variables. Also, I've learned how to create a theme switcher and an accessible card component, and a skip link.</p>
+        <p>On the second hand, I've used Parcel like a web application bundler for the first time. I've learned how to set it and use extra plugins.</p>
     {% endprojectDesc%}
 
     {% projectDesc "Future Improvements" %}
-        <p>In a future I’ll want to improve existing guides for a developers and designers, add a new guide for QA engineers and create more smoothing theme switching.</p>
+        <p>In a feature I'll want to improve existing guides for developers and designers, add a new guide for QA engineers and create more smoothing theme switching.</p>
     {% endprojectDesc%}
 {% endprojectColumn %}
