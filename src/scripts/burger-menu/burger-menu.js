@@ -10,7 +10,7 @@ export function BurgerMenu() {
 	function openMenu() {
 		$menuBtn.classList.add($menuBtn_closed);
 		$menuBtn.setAttribute("aria-expanded", "true");
-		$menuBtn.setAttribute("aria-label", "Закрыть меню");
+		$menuBtn.setAttribute("aria-label", "Close menu");
 		$menuContainer.classList.add($menuContainer_opened);
 		$isOpen = true;
 	}
@@ -19,7 +19,7 @@ export function BurgerMenu() {
 	function closeMenu() {
 		$menuBtn.classList.remove($menuBtn_closed);
 		$menuBtn.setAttribute("aria-expanded", "false");
-		$menuBtn.setAttribute("aria-label", "Открыть меню");
+		$menuBtn.setAttribute("aria-label", "Open menu");
 		$menuContainer.classList.remove($menuContainer_opened);
 		$isOpen = false;
 	}
