@@ -1,4 +1,3 @@
-const pluginSass = require("eleventy-plugin-sass");
 const Image = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
@@ -10,15 +9,6 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ "src/pages/images/**/*.svg": "images" });
 	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
-	// Styles
-	eleventyConfig.addPlugin(pluginSass, {
-		watch: [
-			"src/styles/**/*.{scss,sass}",
-			"!node_modules/**"
-		],
-		outputDir: "test/styles",
-		cleanCSS: false
-	});
 
 	// Shortcodes
 	// Projects
@@ -87,7 +77,7 @@ module.exports = function(eleventyConfig) {
 					alt="${alt}"					
 					decoding="async"
 					loading="lazy">
-	        </picture>
+			</picture>
 		`;
 	}
 
