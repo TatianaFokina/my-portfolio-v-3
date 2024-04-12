@@ -1,22 +1,24 @@
 {
-    "name": "Портфолио Фокиной Татьяны",
+    "name": "Tatiana Fokina - web developer",
+    "description": "Tatiana Fokina is a web developer. Information about her, her skills, pet-projects and activities.",
     "lang": "ru",
-    "display": "browser",
-    "orientation": "any",
+    "dir": "ltr",
+    "id": "/",
+    "start_url": "/",
+    "orientation": "natural",
     "icons": [
         {
-          "icons": [
-            {
-                "src": "/assets/favicons/icon-192.png",
-                "type": "image/png",
-                "sizes": "192x192"
-            },
-            {
-                "src": "/assets/favicons/icon-512.png",
-                "type": "image/png",
-                "sizes": "512x512"
-            }
-          ]
+            "src": "/assets/favicons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/favicons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
-    ]
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "browser"
 }

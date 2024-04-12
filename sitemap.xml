@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     
+        <url>
+            <loc>https://fokina-dev.ru/</loc>
+            <lastmod>2024-04-12T20:57:47.315Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+     
+        <url>
+            <loc>https://fokina-dev.ru/projects/a11y-team-guide/</loc>
+            <lastmod>2024-04-12T20:57:47.320Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+     
+        <url>
+            <loc>https://fokina-dev.ru/projects/stylus-css-grid-system/</loc>
+            <lastmod>2024-04-12T20:57:47.326Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+    
+</urlset>
