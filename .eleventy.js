@@ -41,14 +41,14 @@ module.exports = function(eleventyConfig) {
 			widths: widths,
 			formats: [null],
 			urlPath: "/images/",
-			outputDir: "./test/images/"
+			outputDir: "./dist/images/"
 		});
 
 		let metadataWebp = await Image(src, {
 			widths: widths,
 			formats: ["webp"],
 			urlPath: "/images/",
-			outputDir: "./test/images/",
+			outputDir: "./dist/images/",
 			sharpWebpOptions: {
 				quality: 85,
 				smartSubsample: true
@@ -84,13 +84,13 @@ module.exports = function(eleventyConfig) {
 	return {
 		dir: {
 			input: "src",
-			output: "test",
-			includes: "_partials",
-			layouts: "templates",
-			data: "data",
+			output: "dist",
+			includes: "_includes",
+			layouts: "_templates",
+			data: "_data",
 		},
 		dataTemplateEngine: "njk",
-		markdownTemplateEngine: false,
+		markdownTemplateEngine: "njk",
 		htmlTemplateEngine: "njk",
 		passthroughFileCopy: true,
 		templateFormats: [
